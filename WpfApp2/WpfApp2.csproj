@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1558271962_12 %281%29.png" />
+    <None Remove="pngtree-blue-fantasy-technology-background-material-backgroundpsd-backgroundadbackground-psdcreative-image_58500.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1558271962_12 (1).png" />
+    <Resource Include="pngtree-blue-fantasy-technology-background-material-backgroundpsd-backgroundadbackground-psdcreative-image_58500.png" />
+  </ItemGroup>
+
+</Project>
