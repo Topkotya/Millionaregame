@@ -14,6 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="1558271962_12 (1).png" />
     <Resource Include="pngtree-blue-fantasy-technology-background-material-backgroundpsd-backgroundadbackground-psdcreative-image_58500.png" />
   </ItemGroup>

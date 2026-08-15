@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
     <Grid>
         <Image HorizontalAlignment="Left" VerticalAlignment="Center" Source="/pngtree-blue-fantasy-technology-background-material-backgroundpsd-backgroundadbackground-psdcreative-image_58500.png" Width="821" Stretch="Fill"/>
         <TextBox HorizontalAlignment="Center" Margin="0,381,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
@@ -19,10 +20,10 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button Content="Button" Grid.Column="0" Grid.Row="0" Height="50" Width="200" Margin="10"/>
-            <Button Content="Button" Grid.Column="0" Grid.Row="1" Height="50" Width="200" Margin="10"/>
-            <Button Content="Button" Grid.Column="1" Grid.Row="0" Height="50" Width="200" Margin="10"/>
-            <Button Content="Button" Grid.Column="1" Grid.Row="1" Height="50" Width="200" Margin="10"/>
+            <Button Content="Button" Grid.Column="0" Grid.Row="0" Height="50" Width="200" Margin="10" Click="Button_Click"/>
+            <Button Content="Button" Grid.Column="0" Grid.Row="1" Height="50" Width="200" Margin="10" Click="Button_Click_2"/>
+            <Button Content="Button" Grid.Column="1" Grid.Row="0" Height="50" Width="200" Margin="10" Click="Button_Click_1"/>
+            <Button Content="Button" Grid.Column="1" Grid.Row="1" Height="50" Width="200" Margin="10" Click="Button_Click_3"/>
         </Grid>
     </Grid>
 </Window>
