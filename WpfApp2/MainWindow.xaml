@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    
+        Title="MainWindow" MinHeight="450" MinWidth="800">
+
     <Window.DataContext>
         <local:MainViewModel>
         </local:MainViewModel>
@@ -115,24 +115,112 @@
     </Window.Resources>
 
     <Grid>
-        <Image Source="/pngtree-blue-fantasy-technology-background-material-backgroundpsd-backgroundadbackground-psdcreative-image_58500.png"
+        <Image Source="/Assets/pngtree-blue-fantasy-technology-background-material-backgroundpsd-backgroundadbackground-psdcreative-image_58500.png"
                Stretch="UniformToFill"/>
 
         <Viewbox Stretch="Uniform"
-             StretchDirection="Both"
+             StretchDirection="UpOnly"             
              HorizontalAlignment="Center"
              VerticalAlignment="Center">
 
-            <Grid Margin="20, 100, 20, 20" Width="666"
-              VerticalAlignment="Bottom">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="170"/>
+                    <ColumnDefinition Width="630"/>
+                </Grid.ColumnDefinitions>
 
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
+                <StackPanel Grid.Column="0" HorizontalAlignment="Left">
+                    <Button Padding="20"                            
+                            Grid.Row="0"                        
+                            Background="{Binding Answer1Background, TargetNullValue={StaticResource BlueGradient}}"
+                            Margin="0,0,0,10"
+                            Height="50"
+                            Template="{StaticResource MillionaireButtonTemplate}"
+                            Command="{Binding SubmitCommand}"
+                            CommandParameter="{Binding Answer1}">
 
-                <TextBox Grid.Row="2"
+                                                    <Viewbox Stretch="Uniform"
+                                 StretchDirection="DownOnly">
+
+                            <TextBlock FontSize="20"
+                                       Padding="0,0,100,0">                            
+                                <Run Text="A: " Foreground="#FFE9D554"/>
+                                <Run Text="{Binding Answer1}"
+                                     Foreground="White"/>
+                            </TextBlock>
+                        </Viewbox>
+                    </Button>
+                    
+                    <Button Grid.Row="0"                        
+                            Background="{Binding Answer1Background, TargetNullValue={StaticResource BlueGradient}}"
+                            Margin="0,0,0,10"
+                            Height="50"
+                            Template="{StaticResource MillionaireButtonTemplate}"
+                            Command="{Binding SubmitCommand}"
+                            CommandParameter="{Binding Answer1}">
+
+                        <Viewbox Stretch="Uniform"
+                                 StretchDirection="DownOnly">
+
+                            <TextBlock FontSize="20"
+                                       Padding="0,0,100,0">                            
+                                <Run Text="A: " Foreground="#FFE9D554"/>
+                                <Run Text="{Binding Answer1}"
+                                     Foreground="White"/>
+                            </TextBlock>
+                        </Viewbox>
+                    </Button>
+                    
+                    <Button Grid.Row="0"                        
+                            Background="{Binding Answer1Background, TargetNullValue={StaticResource BlueGradient}}"
+                            Margin="0,0,0,10"
+                            Height="50"
+                            Template="{StaticResource MillionaireButtonTemplate}"
+                            Command="{Binding SubmitCommand}"
+                            CommandParameter="{Binding Answer1}">
+
+                        <Viewbox Stretch="Uniform"
+                                 StretchDirection="DownOnly">
+
+                            <TextBlock FontSize="20"
+                                       Padding="0,0,100,0">                            
+                                <Run Text="A: " Foreground="#FFE9D554"/>
+                                <Run Text="{Binding Answer1}"
+                                     Foreground="White"/>
+                            </TextBlock>
+                        </Viewbox>
+                    </Button>
+                    
+                    <Button Grid.Row="0"                        
+                            Background="{Binding Answer1Background, TargetNullValue={StaticResource BlueGradient}}"
+                            Margin="0,0,0,10"
+                            Height="50"
+                            Template="{StaticResource MillionaireButtonTemplate}"
+                            Command="{Binding SubmitCommand}"
+                            CommandParameter="{Binding Answer1}">
+
+                        <Viewbox Stretch="Uniform"
+                                 StretchDirection="DownOnly">
+
+                            <TextBlock FontSize="20"
+                                       Padding="0,0,100,0">                            
+                                <Run Text="A: " Foreground="#FFE9D554"/>
+                                <Run Text="{Binding Answer1}"
+                                     Foreground="White"/>
+                            </TextBlock>
+                        </Viewbox>
+                    </Button>
+                </StackPanel>
+
+                <Grid Margin="0,100, 40, 0" VerticalAlignment="Bottom" Grid.Column="1">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBox Grid.Row="2"
                      Foreground="White"
                      Background="{StaticResource BlueGradient}"
                      IsReadOnly="True"
@@ -145,7 +233,7 @@
                      Margin="0,10,0,45"
                      Template="{StaticResource MillionaireTextBoxTemplate}"/>
 
-                <TextBox Grid.Row="0"
+                    <TextBox Grid.Row="0"
                  Foreground="White"
                  Background="{StaticResource BlueGradient}"
                  IsReadOnly="True"
@@ -158,20 +246,20 @@
                  TextAlignment="Center"
                  Template="{StaticResource MillionaireTextBoxTemplate}"/>
 
-                <Grid Grid.Row="1"
+                    <Grid Grid.Row="1"
                   HorizontalAlignment="Center">
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="200"/>
-                        <ColumnDefinition Width="200"/>
-                    </Grid.ColumnDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="60"/>
-                        <RowDefinition Height="55"/>
-                    </Grid.RowDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="55"/>
+                        </Grid.RowDefinitions>
 
-                    <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                         Grid.Row="0"                        
                         Background="{Binding Answer1Background, TargetNullValue={StaticResource BlueGradient}}"
                         Margin="1"
@@ -180,20 +268,20 @@
                         Command="{Binding SubmitCommand}"
                         CommandParameter="{Binding Answer1}">
 
-                        <Viewbox Stretch="Uniform"
+                            <Viewbox Stretch="Uniform"
                              StretchDirection="DownOnly">
 
-                            <TextBlock FontSize="20"
+                                <TextBlock FontSize="20"
                                    Padding="0,0,100,0">                            
                             <Run Text="A: " Foreground="#FFE9D554"/>
                             <Run Text="{Binding Answer1}"
                                  Foreground="White"/>
-                            </TextBlock>
+                                </TextBlock>
 
-                        </Viewbox>
-                    </Button>
+                            </Viewbox>
+                        </Button>
 
-                    <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                         Grid.Row="1"
                         Background="{Binding Answer2Background, TargetNullValue={StaticResource BlueGradient}}"
                         Margin="0"
@@ -202,20 +290,20 @@
                         Command="{Binding SubmitCommand}"
                         CommandParameter="{Binding Answer2}">
 
-                        <Viewbox Stretch="Uniform"
+                            <Viewbox Stretch="Uniform"
                              StretchDirection="DownOnly">
 
-                            <TextBlock FontSize="20"
+                                <TextBlock FontSize="20"
                                    Padding="0,0,100,0">
                             <Run Text="B: " Foreground="#FFE9D554"/>
                             <Run Text="{Binding Answer2}"
                                  Foreground="White"/>
-                            </TextBlock>
+                                </TextBlock>
 
-                        </Viewbox>
-                    </Button>
+                            </Viewbox>
+                        </Button>
 
-                    <Button Grid.Column="1"
+                        <Button Grid.Column="1"
                         Grid.Row="0"
                         Background="{Binding Answer3Background, TargetNullValue={StaticResource BlueGradient}}"
                         Margin="0"
@@ -224,20 +312,20 @@
                         Command="{Binding SubmitCommand}"
                         CommandParameter="{Binding Answer3}">
 
-                        <Viewbox Stretch="Uniform"
+                            <Viewbox Stretch="Uniform"
                              StretchDirection="DownOnly">
 
-                            <TextBlock FontSize="20"
+                                <TextBlock FontSize="20"
                                    Padding="0,0,100,0">
                             <Run Text="C: " Foreground="#FFE9D554"/>
                             <Run Text="{Binding Answer3}"
                                  Foreground="White"/>
-                            </TextBlock>
+                                </TextBlock>
 
-                        </Viewbox>
-                    </Button>
+                            </Viewbox>
+                        </Button>
 
-                    <Button Grid.Column="1"
+                        <Button Grid.Column="1"
                         Grid.Row="1"
                         Background="{Binding Answer4Background, TargetNullValue={StaticResource BlueGradient}}"
                         Margin="1"
@@ -246,26 +334,30 @@
                         Command="{Binding SubmitCommand}"
                         CommandParameter="{Binding Answer4}">
 
-                        <Viewbox Stretch="Uniform"
+                            <Viewbox Stretch="Uniform"
                              StretchDirection="DownOnly">
 
-                            <TextBlock FontSize="20"
+                                <TextBlock FontSize="20"
                                    Padding="0,0,100,0">
                             <Run Text="D: " Foreground="#FFE9D554"/>
                             <Run Text="{Binding Answer4}"
                                  Foreground="White"/>
-                            </TextBlock>
+                                </TextBlock>
 
-                        </Viewbox>
-                    </Button>
+                            </Viewbox>
+                        </Button>
+
+                    </Grid>
 
                 </Grid>
+
             </Grid>
+
         </Viewbox>
-        
+
         <!--экран победы-->
         <Viewbox Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="{Binding WinScreenState, Converter={StaticResource VisibilityConverter}}">
-            
+
             <Grid Background="#FF061B4D" HorizontalAlignment="Center" VerticalAlignment="Center">
 
                 <TextBlock
@@ -274,7 +366,7 @@
                 FontSize="35"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"/>
-                
+
             </Grid>
         </Viewbox>
 
@@ -289,7 +381,7 @@
                 Foreground="White"
                 FontSize="35"
                 HorizontalAlignment="Center"
-                VerticalAlignment="Center"/>    
+                VerticalAlignment="Center"/>
 
             </Grid>
         </Viewbox>

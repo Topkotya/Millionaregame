@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="1558271962_12 %281%29.png" />
     <None Remove="pngtree-blue-fantasy-technology-background-material-backgroundpsd-backgroundadbackground-psdcreative-image_58500.png" />
   </ItemGroup>
 
@@ -18,8 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="1558271962_12 (1).png" />
-    <Resource Include="pngtree-blue-fantasy-technology-background-material-backgroundpsd-backgroundadbackground-psdcreative-image_58500.png" />
+    <Page Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\pngtree-blue-fantasy-technology-background-material-backgroundpsd-backgroundadbackground-psdcreative-image_58500.png" />
   </ItemGroup>
 
 </Project>
