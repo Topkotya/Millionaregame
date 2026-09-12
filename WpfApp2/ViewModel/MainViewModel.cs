@@ -1,14 +1,16 @@
-﻿using System.ComponentModel;
-using System.Windows;
-using System.Windows.Input;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Input;
-using System.Windows.Media;
+using System.ComponentModel;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows;
+using System.Windows.Input;
+using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media;
+using System.Windows.Media.Media3D;
 
 namespace WpfApp2
 {
@@ -16,8 +18,9 @@ namespace WpfApp2
     {
         private MainModel mod = new MainModel();
         private AnimationHelper animator = new AnimationHelper();
-        private const int WinningRound = 11;
+        private const int WinningRound = 16;
         private bool isAnswering;
+
         public bool WinScreenState
         {
             get => field;
@@ -44,7 +47,7 @@ namespace WpfApp2
                 field = value;
                 OnPropertyChanged(nameof(Answer1Background));
             }
-        }        
+        }
         public Brush Answer2Background
         {
             get => field;
@@ -149,11 +152,12 @@ namespace WpfApp2
         public MainViewModel()
         {
             PrintRound = "1";
+            InitializeRewards();
             FieldAnswers();
             SubmitCommand = new RelayCommand(OnSubmit, CanSubmit);
-        }        
+        }
         private async Task SetAnswerColor(string answer, bool isCorrect)
-        {            
+        {
             if (answer == Answer1) await animator.PlayButtonAnimation(b => Answer1Background = b, isCorrect);
             else if (answer == Answer2) await animator.PlayButtonAnimation(b => Answer2Background = b, isCorrect);
             else if (answer == Answer3) await animator.PlayButtonAnimation(b => Answer3Background = b, isCorrect);
@@ -171,12 +175,18 @@ namespace WpfApp2
 
             if (isCorrect)
             {
-                if (int.Parse(mod.CurrentRound) == WinningRound)
+                if (int.TryParse(mod.CurrentRound, out int result) && result == WinningRound) //переменная result это текущий раунд
                 {
                     WinScreenState = true;
                     return;
                 }
-                PrintRound = mod.CurrentRound;
+                int tempResult = result - 2;
+                PrintRound = mod.CurrentRound; // перешли на следующий раунд                
+                Rewards[result - 1].State = ERewardState.current;                
+                while(tempResult >= 0)
+                {
+                    Rewards[tempResult--].State = ERewardState.completed;                    
+                }                
 
                 // Возвращаем кнопкам исходный градиент
                 Answer1Background = null;
@@ -196,6 +206,12 @@ namespace WpfApp2
         {
             return !isAnswering;
         }
+        private void InitializeRewards()
+        {            
+            List<RewardView> tempRewards = Enumerable.Range(0,15).Select(x => new RewardView() { Reward = (Math.Pow(2, x) * 300).ToString() }).ToList();
+            Rewards = new ObservableCollection<RewardView>(tempRewards);
+        }
+        public ObservableCollection<RewardView> Rewards { get; set; } = new ObservableCollection<RewardView>();
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string name) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }

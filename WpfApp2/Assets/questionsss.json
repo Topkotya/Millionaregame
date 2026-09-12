@@ -1,0 +1,3184 @@
+{
+  "questionList": {
+    "1": [
+      {
+        "question": "Сколько дней в одной неделе?",
+        "options": [
+          {
+            "Str": "5",
+            "IsRight": false
+          },
+          {
+            "Str": "6",
+            "IsRight": false
+          },
+          {
+            "Str": "7",
+            "IsRight": true
+          },
+          {
+            "Str": "8",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какого цвета обычно бывает трава?",
+        "options": [
+          {
+            "Str": "Синего",
+            "IsRight": false
+          },
+          {
+            "Str": "Зелёного",
+            "IsRight": true
+          },
+          {
+            "Str": "Красного",
+            "IsRight": false
+          },
+          {
+            "Str": "Фиолетового",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Сколько месяцев в году?",
+        "options": [
+          {
+            "Str": "10",
+            "IsRight": false
+          },
+          {
+            "Str": "11",
+            "IsRight": false
+          },
+          {
+            "Str": "12",
+            "IsRight": true
+          },
+          {
+            "Str": "13",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется спутник Земли?",
+        "options": [
+          {
+            "Str": "Марс",
+            "IsRight": false
+          },
+          {
+            "Str": "Луна",
+            "IsRight": true
+          },
+          {
+            "Str": "Солнце",
+            "IsRight": false
+          },
+          {
+            "Str": "Венера",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Сколько ног у обычной собаки?",
+        "options": [
+          {
+            "Str": "2",
+            "IsRight": false
+          },
+          {
+            "Str": "3",
+            "IsRight": false
+          },
+          {
+            "Str": "4",
+            "IsRight": true
+          },
+          {
+            "Str": "6",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какая планета является третьей от Солнца?",
+        "options": [
+          {
+            "Str": "Марс",
+            "IsRight": false
+          },
+          {
+            "Str": "Земля",
+            "IsRight": true
+          },
+          {
+            "Str": "Венера",
+            "IsRight": false
+          },
+          {
+            "Str": "Юпитер",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется замороженная вода?",
+        "options": [
+          {
+            "Str": "Пар",
+            "IsRight": false
+          },
+          {
+            "Str": "Лёд",
+            "IsRight": true
+          },
+          {
+            "Str": "Туман",
+            "IsRight": false
+          },
+          {
+            "Str": "Роса",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой фрукт обычно имеет жёлтую кожуру и изогнутую форму?",
+        "options": [
+          {
+            "Str": "Яблоко",
+            "IsRight": false
+          },
+          {
+            "Str": "Банан",
+            "IsRight": true
+          },
+          {
+            "Str": "Арбуз",
+            "IsRight": false
+          },
+          {
+            "Str": "Вишня",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Сколько пальцев на одной руке у человека?",
+        "options": [
+          {
+            "Str": "4",
+            "IsRight": false
+          },
+          {
+            "Str": "5",
+            "IsRight": true
+          },
+          {
+            "Str": "6",
+            "IsRight": false
+          },
+          {
+            "Str": "7",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой океан является крупнейшим на Земле?",
+        "options": [
+          {
+            "Str": "Атлантический",
+            "IsRight": false
+          },
+          {
+            "Str": "Индийский",
+            "IsRight": false
+          },
+          {
+            "Str": "Тихий",
+            "IsRight": true
+          },
+          {
+            "Str": "Северный Ледовитый",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "question": "Какая столица России?",
+        "options": [
+          {
+            "Str": "Санкт-Петербург",
+            "IsRight": false
+          },
+          {
+            "Str": "Москва",
+            "IsRight": true
+          },
+          {
+            "Str": "Казань",
+            "IsRight": false
+          },
+          {
+            "Str": "Сочи",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Сколько будет 8 × 7?",
+        "options": [
+          {
+            "Str": "48",
+            "IsRight": false
+          },
+          {
+            "Str": "54",
+            "IsRight": false
+          },
+          {
+            "Str": "56",
+            "IsRight": true
+          },
+          {
+            "Str": "64",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Кто написал роман «Война и мир»?",
+        "options": [
+          {
+            "Str": "Фёдор Достоевский",
+            "IsRight": false
+          },
+          {
+            "Str": "Лев Толстой",
+            "IsRight": true
+          },
+          {
+            "Str": "Антон Чехов",
+            "IsRight": false
+          },
+          {
+            "Str": "Иван Тургенев",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой газ преобладает в атмосфере Земли?",
+        "options": [
+          {
+            "Str": "Кислород",
+            "IsRight": false
+          },
+          {
+            "Str": "Азот",
+            "IsRight": true
+          },
+          {
+            "Str": "Углекислый газ",
+            "IsRight": false
+          },
+          {
+            "Str": "Водород",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется прибор для измерения температуры?",
+        "options": [
+          {
+            "Str": "Барометр",
+            "IsRight": false
+          },
+          {
+            "Str": "Термометр",
+            "IsRight": true
+          },
+          {
+            "Str": "Компас",
+            "IsRight": false
+          },
+          {
+            "Str": "Гигрометр",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какая самая большая планета Солнечной системы?",
+        "options": [
+          {
+            "Str": "Земля",
+            "IsRight": false
+          },
+          {
+            "Str": "Сатурн",
+            "IsRight": false
+          },
+          {
+            "Str": "Юпитер",
+            "IsRight": true
+          },
+          {
+            "Str": "Нептун",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Сколько градусов составляет прямой угол?",
+        "options": [
+          {
+            "Str": "45",
+            "IsRight": false
+          },
+          {
+            "Str": "90",
+            "IsRight": true
+          },
+          {
+            "Str": "180",
+            "IsRight": false
+          },
+          {
+            "Str": "360",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой металл обозначается химическим символом Fe?",
+        "options": [
+          {
+            "Str": "Медь",
+            "IsRight": false
+          },
+          {
+            "Str": "Железо",
+            "IsRight": true
+          },
+          {
+            "Str": "Серебро",
+            "IsRight": false
+          },
+          {
+            "Str": "Золото",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "На каком континенте находится Египет?",
+        "options": [
+          {
+            "Str": "Азия",
+            "IsRight": false
+          },
+          {
+            "Str": "Африка",
+            "IsRight": true
+          },
+          {
+            "Str": "Европа",
+            "IsRight": false
+          },
+          {
+            "Str": "Южная Америка",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется детёныш лошади?",
+        "options": [
+          {
+            "Str": "Телёнок",
+            "IsRight": false
+          },
+          {
+            "Str": "Жеребёнок",
+            "IsRight": true
+          },
+          {
+            "Str": "Поросёнок",
+            "IsRight": false
+          },
+          {
+            "Str": "Козлёнок",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "question": "Кто был первым человеком в космосе?",
+        "options": [
+          {
+            "Str": "Нил Армстронг",
+            "IsRight": false
+          },
+          {
+            "Str": "Юрий Гагарин",
+            "IsRight": true
+          },
+          {
+            "Str": "Алексей Леонов",
+            "IsRight": false
+          },
+          {
+            "Str": "Джон Гленн",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какая река считается самой длинной в России?",
+        "options": [
+          {
+            "Str": "Волга",
+            "IsRight": true
+          },
+          {
+            "Str": "Дон",
+            "IsRight": false
+          },
+          {
+            "Str": "Обь",
+            "IsRight": false
+          },
+          {
+            "Str": "Енисей",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой орган человека отвечает за перекачивание крови?",
+        "options": [
+          {
+            "Str": "Лёгкие",
+            "IsRight": false
+          },
+          {
+            "Str": "Печень",
+            "IsRight": false
+          },
+          {
+            "Str": "Сердце",
+            "IsRight": true
+          },
+          {
+            "Str": "Почки",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "В каком году человек впервые высадился на Луне?",
+        "options": [
+          {
+            "Str": "1959",
+            "IsRight": false
+          },
+          {
+            "Str": "1965",
+            "IsRight": false
+          },
+          {
+            "Str": "1969",
+            "IsRight": true
+          },
+          {
+            "Str": "1972",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой язык является официальным в Бразилии?",
+        "options": [
+          {
+            "Str": "Испанский",
+            "IsRight": false
+          },
+          {
+            "Str": "Португальский",
+            "IsRight": true
+          },
+          {
+            "Str": "Английский",
+            "IsRight": false
+          },
+          {
+            "Str": "Французский",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой элемент имеет химический символ Au?",
+        "options": [
+          {
+            "Str": "Серебро",
+            "IsRight": false
+          },
+          {
+            "Str": "Золото",
+            "IsRight": true
+          },
+          {
+            "Str": "Алюминий",
+            "IsRight": false
+          },
+          {
+            "Str": "Аргон",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Кто написал пьесу «Ромео и Джульетта»?",
+        "options": [
+          {
+            "Str": "Уильям Шекспир",
+            "IsRight": true
+          },
+          {
+            "Str": "Чарльз Диккенс",
+            "IsRight": false
+          },
+          {
+            "Str": "Данте Алигьери",
+            "IsRight": false
+          },
+          {
+            "Str": "Оскар Уайльд",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется наука о землетрясениях?",
+        "options": [
+          {
+            "Str": "Сейсмология",
+            "IsRight": true
+          },
+          {
+            "Str": "Геодезия",
+            "IsRight": false
+          },
+          {
+            "Str": "Метеорология",
+            "IsRight": false
+          },
+          {
+            "Str": "Астрономия",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какая страна подарила США Статую Свободы?",
+        "options": [
+          {
+            "Str": "Великобритания",
+            "IsRight": false
+          },
+          {
+            "Str": "Франция",
+            "IsRight": true
+          },
+          {
+            "Str": "Италия",
+            "IsRight": false
+          },
+          {
+            "Str": "Испания",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется процесс превращения воды в водяной пар?",
+        "options": [
+          {
+            "Str": "Конденсация",
+            "IsRight": false
+          },
+          {
+            "Str": "Испарение",
+            "IsRight": true
+          },
+          {
+            "Str": "Замерзание",
+            "IsRight": false
+          },
+          {
+            "Str": "Кристаллизация",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "question": "Какой город является столицей Австралии?",
+        "options": [
+          {
+            "Str": "Сидней",
+            "IsRight": false
+          },
+          {
+            "Str": "Мельбурн",
+            "IsRight": false
+          },
+          {
+            "Str": "Канберра",
+            "IsRight": true
+          },
+          {
+            "Str": "Перт",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой художник написал «Мону Лизу»?",
+        "options": [
+          {
+            "Str": "Микеланджело",
+            "IsRight": false
+          },
+          {
+            "Str": "Леонардо да Винчи",
+            "IsRight": true
+          },
+          {
+            "Str": "Рафаэль",
+            "IsRight": false
+          },
+          {
+            "Str": "Ван Гог",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какая кровь считается универсальной донорской для эритроцитов?",
+        "options": [
+          {
+            "Str": "AB+",
+            "IsRight": false
+          },
+          {
+            "Str": "O−",
+            "IsRight": true
+          },
+          {
+            "Str": "A+",
+            "IsRight": false
+          },
+          {
+            "Str": "B−",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется самая высокая гора Земли над уровнем моря?",
+        "options": [
+          {
+            "Str": "К2",
+            "IsRight": false
+          },
+          {
+            "Str": "Эверест",
+            "IsRight": true
+          },
+          {
+            "Str": "Килиманджаро",
+            "IsRight": false
+          },
+          {
+            "Str": "Монблан",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой римский бог войны соответствует греческому Аресу?",
+        "options": [
+          {
+            "Str": "Юпитер",
+            "IsRight": false
+          },
+          {
+            "Str": "Марс",
+            "IsRight": true
+          },
+          {
+            "Str": "Нептун",
+            "IsRight": false
+          },
+          {
+            "Str": "Меркурий",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется столица Канады?",
+        "options": [
+          {
+            "Str": "Торонто",
+            "IsRight": false
+          },
+          {
+            "Str": "Ванкувер",
+            "IsRight": false
+          },
+          {
+            "Str": "Оттава",
+            "IsRight": true
+          },
+          {
+            "Str": "Монреаль",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какая частица определяет химические свойства элемента и имеет отрицательный заряд?",
+        "options": [
+          {
+            "Str": "Протон",
+            "IsRight": false
+          },
+          {
+            "Str": "Нейтрон",
+            "IsRight": false
+          },
+          {
+            "Str": "Электрон",
+            "IsRight": true
+          },
+          {
+            "Str": "Фотон",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой океан находится между Африкой и Австралией?",
+        "options": [
+          {
+            "Str": "Атлантический",
+            "IsRight": false
+          },
+          {
+            "Str": "Индийский",
+            "IsRight": true
+          },
+          {
+            "Str": "Тихий",
+            "IsRight": false
+          },
+          {
+            "Str": "Северный Ледовитый",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Кто сформулировал три закона движения и закон всемирного тяготения?",
+        "options": [
+          {
+            "Str": "Альберт Эйнштейн",
+            "IsRight": false
+          },
+          {
+            "Str": "Исаак Ньютон",
+            "IsRight": true
+          },
+          {
+            "Str": "Галилео Галилей",
+            "IsRight": false
+          },
+          {
+            "Str": "Никола Тесла",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой металл является жидким при комнатной температуре?",
+        "options": [
+          {
+            "Str": "Железо",
+            "IsRight": false
+          },
+          {
+            "Str": "Ртуть",
+            "IsRight": true
+          },
+          {
+            "Str": "Медь",
+            "IsRight": false
+          },
+          {
+            "Str": "Олово",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "5": [
+      {
+        "question": "Какой договор завершил Первую мировую войну между Германией и союзниками?",
+        "options": [
+          {
+            "Str": "Версальский договор",
+            "IsRight": true
+          },
+          {
+            "Str": "Брестский мир",
+            "IsRight": false
+          },
+          {
+            "Str": "Тильзитский мир",
+            "IsRight": false
+          },
+          {
+            "Str": "Вестфальский мир",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой элемент имеет атомный номер 6?",
+        "options": [
+          {
+            "Str": "Кислород",
+            "IsRight": false
+          },
+          {
+            "Str": "Углерод",
+            "IsRight": true
+          },
+          {
+            "Str": "Азот",
+            "IsRight": false
+          },
+          {
+            "Str": "Бор",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой пролив отделяет Европу от Африки?",
+        "options": [
+          {
+            "Str": "Берингов",
+            "IsRight": false
+          },
+          {
+            "Str": "Гибралтарский",
+            "IsRight": true
+          },
+          {
+            "Str": "Малаккский",
+            "IsRight": false
+          },
+          {
+            "Str": "Ла-Манш",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Кто является автором «Божественной комедии»?",
+        "options": [
+          {
+            "Str": "Данте Алигьери",
+            "IsRight": true
+          },
+          {
+            "Str": "Гомер",
+            "IsRight": false
+          },
+          {
+            "Str": "Вергилий",
+            "IsRight": false
+          },
+          {
+            "Str": "Петрарка",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется крупнейшая пустыня мира по площади?",
+        "options": [
+          {
+            "Str": "Сахара",
+            "IsRight": false
+          },
+          {
+            "Str": "Антарктическая пустыня",
+            "IsRight": true
+          },
+          {
+            "Str": "Гоби",
+            "IsRight": false
+          },
+          {
+            "Str": "Калахари",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой физический закон описывает связь силы, массы и ускорения?",
+        "options": [
+          {
+            "Str": "Закон Ома",
+            "IsRight": false
+          },
+          {
+            "Str": "Второй закон Ньютона",
+            "IsRight": true
+          },
+          {
+            "Str": "Закон Архимеда",
+            "IsRight": false
+          },
+          {
+            "Str": "Закон Бойля",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой композитор написал Девятую симфонию?",
+        "options": [
+          {
+            "Str": "Моцарт",
+            "IsRight": false
+          },
+          {
+            "Str": "Бетховен",
+            "IsRight": true
+          },
+          {
+            "Str": "Бах",
+            "IsRight": false
+          },
+          {
+            "Str": "Шопен",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется деление клетки на две генетически идентичные дочерние клетки?",
+        "options": [
+          {
+            "Str": "Мейоз",
+            "IsRight": false
+          },
+          {
+            "Str": "Митоз",
+            "IsRight": true
+          },
+          {
+            "Str": "Мутация",
+            "IsRight": false
+          },
+          {
+            "Str": "Осмос",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какая страна имеет форму, напоминающую сапог?",
+        "options": [
+          {
+            "Str": "Греция",
+            "IsRight": false
+          },
+          {
+            "Str": "Италия",
+            "IsRight": true
+          },
+          {
+            "Str": "Португалия",
+            "IsRight": false
+          },
+          {
+            "Str": "Хорватия",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой газ растения поглощают в процессе фотосинтеза?",
+        "options": [
+          {
+            "Str": "Кислород",
+            "IsRight": false
+          },
+          {
+            "Str": "Азот",
+            "IsRight": false
+          },
+          {
+            "Str": "Углекислый газ",
+            "IsRight": true
+          },
+          {
+            "Str": "Водород",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "6": [
+      {
+        "question": "Как называется древнегреческий эпос, рассказывающий о событиях Троянской войны?",
+        "options": [
+          {
+            "Str": "Одиссея",
+            "IsRight": false
+          },
+          {
+            "Str": "Илиада",
+            "IsRight": true
+          },
+          {
+            "Str": "Энеида",
+            "IsRight": false
+          },
+          {
+            "Str": "Метаморфозы",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой химический элемент является самым распространённым во Вселенной?",
+        "options": [
+          {
+            "Str": "Гелий",
+            "IsRight": false
+          },
+          {
+            "Str": "Водород",
+            "IsRight": true
+          },
+          {
+            "Str": "Кислород",
+            "IsRight": false
+          },
+          {
+            "Str": "Углерод",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Кто написал роман «Преступление и наказание»?",
+        "options": [
+          {
+            "Str": "Лев Толстой",
+            "IsRight": false
+          },
+          {
+            "Str": "Фёдор Достоевский",
+            "IsRight": true
+          },
+          {
+            "Str": "Николай Гоголь",
+            "IsRight": false
+          },
+          {
+            "Str": "Иван Бунин",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой император построил большую часть Пантеона в его сохранившемся виде?",
+        "options": [
+          {
+            "Str": "Август",
+            "IsRight": false
+          },
+          {
+            "Str": "Адриан",
+            "IsRight": true
+          },
+          {
+            "Str": "Нерон",
+            "IsRight": false
+          },
+          {
+            "Str": "Траян",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется единица измерения электрического сопротивления?",
+        "options": [
+          {
+            "Str": "Ватт",
+            "IsRight": false
+          },
+          {
+            "Str": "Ом",
+            "IsRight": true
+          },
+          {
+            "Str": "Ампер",
+            "IsRight": false
+          },
+          {
+            "Str": "Вольт",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой художник является автором картины «Звёздная ночь»?",
+        "options": [
+          {
+            "Str": "Клод Моне",
+            "IsRight": false
+          },
+          {
+            "Str": "Винсент ван Гог",
+            "IsRight": true
+          },
+          {
+            "Str": "Поль Сезанн",
+            "IsRight": false
+          },
+          {
+            "Str": "Эдгар Дега",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какая цивилизация создала город Мачу-Пикчу?",
+        "options": [
+          {
+            "Str": "Ацтеки",
+            "IsRight": false
+          },
+          {
+            "Str": "Инки",
+            "IsRight": true
+          },
+          {
+            "Str": "Майя",
+            "IsRight": false
+          },
+          {
+            "Str": "Ольмеки",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется процесс деления клеток, приводящий к образованию половых клеток?",
+        "options": [
+          {
+            "Str": "Митоз",
+            "IsRight": false
+          },
+          {
+            "Str": "Мейоз",
+            "IsRight": true
+          },
+          {
+            "Str": "Бинарное деление",
+            "IsRight": false
+          },
+          {
+            "Str": "Репликация",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какая страна первой запустила искусственный спутник Земли?",
+        "options": [
+          {
+            "Str": "США",
+            "IsRight": false
+          },
+          {
+            "Str": "СССР",
+            "IsRight": true
+          },
+          {
+            "Str": "Китай",
+            "IsRight": false
+          },
+          {
+            "Str": "Франция",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется шкала абсолютной температуры?",
+        "options": [
+          {
+            "Str": "Цельсий",
+            "IsRight": false
+          },
+          {
+            "Str": "Кельвин",
+            "IsRight": true
+          },
+          {
+            "Str": "Фаренгейт",
+            "IsRight": false
+          },
+          {
+            "Str": "Ранкин",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "7": [
+      {
+        "question": "Какой философ написал «Государство»?",
+        "options": [
+          {
+            "Str": "Аристотель",
+            "IsRight": false
+          },
+          {
+            "Str": "Платон",
+            "IsRight": true
+          },
+          {
+            "Str": "Сократ",
+            "IsRight": false
+          },
+          {
+            "Str": "Эпикур",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется крупнейшая железа человеческого организма?",
+        "options": [
+          {
+            "Str": "Щитовидная железа",
+            "IsRight": false
+          },
+          {
+            "Str": "Печень",
+            "IsRight": true
+          },
+          {
+            "Str": "Поджелудочная железа",
+            "IsRight": false
+          },
+          {
+            "Str": "Гипофиз",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой математик ввёл символы для дифференциального и интегрального исчисления независимо от Ньютона?",
+        "options": [
+          {
+            "Str": "Готфрид Лейбниц",
+            "IsRight": true
+          },
+          {
+            "Str": "Пифагор",
+            "IsRight": false
+          },
+          {
+            "Str": "Эвклид",
+            "IsRight": false
+          },
+          {
+            "Str": "Карл Гаусс",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой город был столицей Византийской империи?",
+        "options": [
+          {
+            "Str": "Рим",
+            "IsRight": false
+          },
+          {
+            "Str": "Константинополь",
+            "IsRight": true
+          },
+          {
+            "Str": "Афины",
+            "IsRight": false
+          },
+          {
+            "Str": "Александрия",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой элемент является основным компонентом земной коры по массе?",
+        "options": [
+          {
+            "Str": "Железо",
+            "IsRight": false
+          },
+          {
+            "Str": "Кислород",
+            "IsRight": true
+          },
+          {
+            "Str": "Кремний",
+            "IsRight": false
+          },
+          {
+            "Str": "Алюминий",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется самая глубокая точка Мирового океана?",
+        "options": [
+          {
+            "Str": "Пуэрто-Риканский жёлоб",
+            "IsRight": false
+          },
+          {
+            "Str": "Марианская впадина",
+            "IsRight": true
+          },
+          {
+            "Str": "Тонга",
+            "IsRight": false
+          },
+          {
+            "Str": "Кермадек",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Кто написал «Мастера и Маргариту»?",
+        "options": [
+          {
+            "Str": "Михаил Булгаков",
+            "IsRight": true
+          },
+          {
+            "Str": "Борис Пастернак",
+            "IsRight": false
+          },
+          {
+            "Str": "Александр Куприн",
+            "IsRight": false
+          },
+          {
+            "Str": "Владимир Набоков",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой физический эффект лежит в основе работы большинства солнечных батарей?",
+        "options": [
+          {
+            "Str": "Фотоэлектрический эффект",
+            "IsRight": true
+          },
+          {
+            "Str": "Доплеровский эффект",
+            "IsRight": false
+          },
+          {
+            "Str": "Эффект Холла",
+            "IsRight": false
+          },
+          {
+            "Str": "Эффект Комптона",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой договор 1648 года положил конец Тридцатилетней войне?",
+        "options": [
+          {
+            "Str": "Вестфальский мир",
+            "IsRight": true
+          },
+          {
+            "Str": "Версальский договор",
+            "IsRight": false
+          },
+          {
+            "Str": "Утрехтский мир",
+            "IsRight": false
+          },
+          {
+            "Str": "Нимвегенский мир",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой органоид клетки содержит генетический материал и управляет большинством процессов клетки?",
+        "options": [
+          {
+            "Str": "Рибосома",
+            "IsRight": false
+          },
+          {
+            "Str": "Ядро",
+            "IsRight": true
+          },
+          {
+            "Str": "Лизосома",
+            "IsRight": false
+          },
+          {
+            "Str": "Митохондрия",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "8": [
+      {
+        "question": "Какой древнеримский историк написал труд «Анналы»?",
+        "options": [
+          {
+            "Str": "Тацит",
+            "IsRight": true
+          },
+          {
+            "Str": "Плутарх",
+            "IsRight": false
+          },
+          {
+            "Str": "Ливий",
+            "IsRight": false
+          },
+          {
+            "Str": "Светоний",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется математическая константа, приблизительно равная 2,71828?",
+        "options": [
+          {
+            "Str": "π",
+            "IsRight": false
+          },
+          {
+            "Str": "e",
+            "IsRight": true
+          },
+          {
+            "Str": "φ",
+            "IsRight": false
+          },
+          {
+            "Str": "γ",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой учёный предложил теорию естественного отбора одновременно с Альфредом Расселом Уоллесом?",
+        "options": [
+          {
+            "Str": "Чарльз Дарвин",
+            "IsRight": true
+          },
+          {
+            "Str": "Грегор Мендель",
+            "IsRight": false
+          },
+          {
+            "Str": "Жан-Батист Ламарк",
+            "IsRight": false
+          },
+          {
+            "Str": "Карл Линней",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется столица Новой Зеландии?",
+        "options": [
+          {
+            "Str": "Окленд",
+            "IsRight": false
+          },
+          {
+            "Str": "Веллингтон",
+            "IsRight": true
+          },
+          {
+            "Str": "Крайстчерч",
+            "IsRight": false
+          },
+          {
+            "Str": "Гамильтон",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой композитор был глух к концу жизни, но продолжал сочинять музыку?",
+        "options": [
+          {
+            "Str": "Моцарт",
+            "IsRight": false
+          },
+          {
+            "Str": "Бетховен",
+            "IsRight": true
+          },
+          {
+            "Str": "Вивальди",
+            "IsRight": false
+          },
+          {
+            "Str": "Гайдн",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой закон связывает давление и объём газа при постоянной температуре?",
+        "options": [
+          {
+            "Str": "Закон Бойля — Мариотта",
+            "IsRight": true
+          },
+          {
+            "Str": "Закон Гей-Люссака",
+            "IsRight": false
+          },
+          {
+            "Str": "Закон Ома",
+            "IsRight": false
+          },
+          {
+            "Str": "Закон Архимеда",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой язык программирования создал Бьёрн Страуструп?",
+        "options": [
+          {
+            "Str": "Java",
+            "IsRight": false
+          },
+          {
+            "Str": "C++",
+            "IsRight": true
+          },
+          {
+            "Str": "Python",
+            "IsRight": false
+          },
+          {
+            "Str": "C#",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется процесс удвоения ДНК перед делением клетки?",
+        "options": [
+          {
+            "Str": "Транскрипция",
+            "IsRight": false
+          },
+          {
+            "Str": "Репликация",
+            "IsRight": true
+          },
+          {
+            "Str": "Трансляция",
+            "IsRight": false
+          },
+          {
+            "Str": "Рекомбинация",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Кто написал философский труд «Критика чистого разума»?",
+        "options": [
+          {
+            "Str": "Иммануил Кант",
+            "IsRight": true
+          },
+          {
+            "Str": "Фридрих Ницше",
+            "IsRight": false
+          },
+          {
+            "Str": "Георг Гегель",
+            "IsRight": false
+          },
+          {
+            "Str": "Артур Шопенгауэр",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой спутник Сатурна имеет плотную азотную атмосферу и озёра жидких углеводородов?",
+        "options": [
+          {
+            "Str": "Европа",
+            "IsRight": false
+          },
+          {
+            "Str": "Титан",
+            "IsRight": true
+          },
+          {
+            "Str": "Ио",
+            "IsRight": false
+          },
+          {
+            "Str": "Ганимед",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "9": [
+      {
+        "question": "Какой элемент имеет наибольшую электроотрицательность по шкале Полинга?",
+        "options": [
+          {
+            "Str": "Кислород",
+            "IsRight": false
+          },
+          {
+            "Str": "Фтор",
+            "IsRight": true
+          },
+          {
+            "Str": "Хлор",
+            "IsRight": false
+          },
+          {
+            "Str": "Азот",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется теорема, утверждающая, что в прямоугольном треугольнике квадрат гипотенузы равен сумме квадратов катетов?",
+        "options": [
+          {
+            "Str": "Теорема Фалеса",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Пифагора",
+            "IsRight": true
+          },
+          {
+            "Str": "Теорема Виета",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Эйлера",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой город считается родиной Ренессанса?",
+        "options": [
+          {
+            "Str": "Париж",
+            "IsRight": false
+          },
+          {
+            "Str": "Флоренция",
+            "IsRight": true
+          },
+          {
+            "Str": "Лондон",
+            "IsRight": false
+          },
+          {
+            "Str": "Мадрид",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой тип связи соединяет аминокислоты в белковой цепи?",
+        "options": [
+          {
+            "Str": "Ионная",
+            "IsRight": false
+          },
+          {
+            "Str": "Пептидная",
+            "IsRight": true
+          },
+          {
+            "Str": "Гликозидная",
+            "IsRight": false
+          },
+          {
+            "Str": "Фосфодиэфирная",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой математический объект описывает отношение длины окружности к её диаметру?",
+        "options": [
+          {
+            "Str": "Число e",
+            "IsRight": false
+          },
+          {
+            "Str": "Число π",
+            "IsRight": true
+          },
+          {
+            "Str": "Золотое сечение",
+            "IsRight": false
+          },
+          {
+            "Str": "Число i",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Кто сформулировал принцип неопределённости в квантовой механике?",
+        "options": [
+          {
+            "Str": "Эрвин Шрёдингер",
+            "IsRight": false
+          },
+          {
+            "Str": "Вернер Гейзенберг",
+            "IsRight": true
+          },
+          {
+            "Str": "Макс Планк",
+            "IsRight": false
+          },
+          {
+            "Str": "Нильс Бор",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой народ построил древний город Теотиуакан?",
+        "options": [
+          {
+            "Str": "Теотиуаканцы",
+            "IsRight": true
+          },
+          {
+            "Str": "Инки",
+            "IsRight": false
+          },
+          {
+            "Str": "Ацтеки",
+            "IsRight": false
+          },
+          {
+            "Str": "Майя",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется переход вещества из твёрдого состояния сразу в газообразное?",
+        "options": [
+          {
+            "Str": "Сублимация",
+            "IsRight": true
+          },
+          {
+            "Str": "Десублимация",
+            "IsRight": false
+          },
+          {
+            "Str": "Конденсация",
+            "IsRight": false
+          },
+          {
+            "Str": "Испарение",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой роман начинается словами о том, что все счастливые семьи похожи друг на друга?",
+        "options": [
+          {
+            "Str": "Анна Каренина",
+            "IsRight": true
+          },
+          {
+            "Str": "Идиот",
+            "IsRight": false
+          },
+          {
+            "Str": "Отцы и дети",
+            "IsRight": false
+          },
+          {
+            "Str": "Евгений Онегин",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой учёный ввёл классификацию организмов с использованием бинарной номенклатуры?",
+        "options": [
+          {
+            "Str": "Карл Линней",
+            "IsRight": true
+          },
+          {
+            "Str": "Чарльз Дарвин",
+            "IsRight": false
+          },
+          {
+            "Str": "Жорж Кювье",
+            "IsRight": false
+          },
+          {
+            "Str": "Роберт Гук",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "10": [
+      {
+        "question": "Как называется фундаментальная теорема алгебры, утверждающая, что любой неконстантный многочлен с комплексными коэффициентами имеет комплексный корень?",
+        "options": [
+          {
+            "Str": "Теорема Гаусса",
+            "IsRight": true
+          },
+          {
+            "Str": "Теорема Ферма",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Эйлера",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Лагранжа",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой физик предложил специальную теорию относительности в 1905 году?",
+        "options": [
+          {
+            "Str": "Исаак Ньютон",
+            "IsRight": false
+          },
+          {
+            "Str": "Альберт Эйнштейн",
+            "IsRight": true
+          },
+          {
+            "Str": "Джеймс Максвелл",
+            "IsRight": false
+          },
+          {
+            "Str": "Эрнест Резерфорд",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется процесс синтеза РНК на матрице ДНК?",
+        "options": [
+          {
+            "Str": "Трансляция",
+            "IsRight": false
+          },
+          {
+            "Str": "Транскрипция",
+            "IsRight": true
+          },
+          {
+            "Str": "Репликация",
+            "IsRight": false
+          },
+          {
+            "Str": "Рекомбинация",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой философ является автором концепции «воли к власти»?",
+        "options": [
+          {
+            "Str": "Карл Маркс",
+            "IsRight": false
+          },
+          {
+            "Str": "Фридрих Ницше",
+            "IsRight": true
+          },
+          {
+            "Str": "Зигмунд Фрейд",
+            "IsRight": false
+          },
+          {
+            "Str": "Сёрен Кьеркегор",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой элемент образует основу большинства силикатных минералов вместе с кислородом?",
+        "options": [
+          {
+            "Str": "Кремний",
+            "IsRight": true
+          },
+          {
+            "Str": "Углерод",
+            "IsRight": false
+          },
+          {
+            "Str": "Железо",
+            "IsRight": false
+          },
+          {
+            "Str": "Кальций",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой древний город был погребён извержением Везувия в 79 году?",
+        "options": [
+          {
+            "Str": "Помпеи",
+            "IsRight": true
+          },
+          {
+            "Str": "Карфаген",
+            "IsRight": false
+          },
+          {
+            "Str": "Спарта",
+            "IsRight": false
+          },
+          {
+            "Str": "Троя",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется преобразование координат, сохраняющее расстояния и углы?",
+        "options": [
+          {
+            "Str": "Изометрия",
+            "IsRight": true
+          },
+          {
+            "Str": "Проекция",
+            "IsRight": false
+          },
+          {
+            "Str": "Гомотетия",
+            "IsRight": false
+          },
+          {
+            "Str": "Инверсия",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой белок переносит кислород в крови позвоночных?",
+        "options": [
+          {
+            "Str": "Инсулин",
+            "IsRight": false
+          },
+          {
+            "Str": "Гемоглобин",
+            "IsRight": true
+          },
+          {
+            "Str": "Кератин",
+            "IsRight": false
+          },
+          {
+            "Str": "Коллаген",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой композитор написал оперу «Волшебная флейта»?",
+        "options": [
+          {
+            "Str": "Вольфганг Амадей Моцарт",
+            "IsRight": true
+          },
+          {
+            "Str": "Джузеппе Верди",
+            "IsRight": false
+          },
+          {
+            "Str": "Рихард Вагнер",
+            "IsRight": false
+          },
+          {
+            "Str": "Джоаккино Россини",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется эффект изменения частоты наблюдаемой волны при движении источника относительно наблюдателя?",
+        "options": [
+          {
+            "Str": "Эффект Доплера",
+            "IsRight": true
+          },
+          {
+            "Str": "Эффект Зеемана",
+            "IsRight": false
+          },
+          {
+            "Str": "Эффект Холла",
+            "IsRight": false
+          },
+          {
+            "Str": "Эффект Комптона",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "11": [
+      {
+        "question": "Как называется гипотеза, согласно которой Вселенная расширяется из состояния чрезвычайно высокой плотности и температуры?",
+        "options": [
+          {
+            "Str": "Теория стационарной Вселенной",
+            "IsRight": false
+          },
+          {
+            "Str": "Теория Большого взрыва",
+            "IsRight": true
+          },
+          {
+            "Str": "Гипотеза Пульсирующей Вселенной",
+            "IsRight": false
+          },
+          {
+            "Str": "Теория эфира",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой математик доказал последнюю теорему Ферма?",
+        "options": [
+          {
+            "Str": "Эндрю Уайлс",
+            "IsRight": true
+          },
+          {
+            "Str": "Теренс Тао",
+            "IsRight": false
+          },
+          {
+            "Str": "Григорий Перельман",
+            "IsRight": false
+          },
+          {
+            "Str": "Дэвид Гильберт",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется принцип, согласно которому энтропия изолированной системы не уменьшается?",
+        "options": [
+          {
+            "Str": "Первый закон термодинамики",
+            "IsRight": false
+          },
+          {
+            "Str": "Второй закон термодинамики",
+            "IsRight": true
+          },
+          {
+            "Str": "Третий закон термодинамики",
+            "IsRight": false
+          },
+          {
+            "Str": "Закон Гука",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой язык использовался для написания большей части оригинальных текстов Нового Завета?",
+        "options": [
+          {
+            "Str": "Латынь",
+            "IsRight": false
+          },
+          {
+            "Str": "Древнегреческий",
+            "IsRight": true
+          },
+          {
+            "Str": "Древнееврейский",
+            "IsRight": false
+          },
+          {
+            "Str": "Коптский",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется частица-переносчик электромагнитного взаимодействия в Стандартной модели?",
+        "options": [
+          {
+            "Str": "Глюон",
+            "IsRight": false
+          },
+          {
+            "Str": "Фотон",
+            "IsRight": true
+          },
+          {
+            "Str": "Нейтрино",
+            "IsRight": false
+          },
+          {
+            "Str": "Бозон Хиггса",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой учёный сформулировал уравнения электромагнитного поля, объединив электричество и магнетизм?",
+        "options": [
+          {
+            "Str": "Майкл Фарадей",
+            "IsRight": false
+          },
+          {
+            "Str": "Джеймс Клерк Максвелл",
+            "IsRight": true
+          },
+          {
+            "Str": "Андре-Мари Ампер",
+            "IsRight": false
+          },
+          {
+            "Str": "Шарль Кулон",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой древний народ разработал клинопись?",
+        "options": [
+          {
+            "Str": "Египтяне",
+            "IsRight": false
+          },
+          {
+            "Str": "Шумеры",
+            "IsRight": true
+          },
+          {
+            "Str": "Финикийцы",
+            "IsRight": false
+          },
+          {
+            "Str": "Персы",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется математическое утверждение, доказанное Эйлером и обобщённое Ферма для простых чисел?",
+        "options": [
+          {
+            "Str": "Малая теорема Ферма",
+            "IsRight": true
+          },
+          {
+            "Str": "Большая теорема Ферма",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Ролля",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Коши",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой минерал является главным источником алюминия?",
+        "options": [
+          {
+            "Str": "Боксит",
+            "IsRight": true
+          },
+          {
+            "Str": "Гематит",
+            "IsRight": false
+          },
+          {
+            "Str": "Пирит",
+            "IsRight": false
+          },
+          {
+            "Str": "Магнетит",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Кто написал роман «Улисс»?",
+        "options": [
+          {
+            "Str": "Джеймс Джойс",
+            "IsRight": true
+          },
+          {
+            "Str": "Вирджиния Вулф",
+            "IsRight": false
+          },
+          {
+            "Str": "Эрнест Хемингуэй",
+            "IsRight": false
+          },
+          {
+            "Str": "Джордж Оруэлл",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "12": [
+      {
+        "question": "Как называется предел отношения приращения функции к приращению аргумента при стремлении последнего к нулю?",
+        "options": [
+          {
+            "Str": "Интеграл",
+            "IsRight": false
+          },
+          {
+            "Str": "Производная",
+            "IsRight": true
+          },
+          {
+            "Str": "Ряд",
+            "IsRight": false
+          },
+          {
+            "Str": "Дискриминант",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой учёный впервые экспериментально обнаружил рентгеновское излучение?",
+        "options": [
+          {
+            "Str": "Вильгельм Конрад Рентген",
+            "IsRight": true
+          },
+          {
+            "Str": "Анри Беккерель",
+            "IsRight": false
+          },
+          {
+            "Str": "Мария Кюри",
+            "IsRight": false
+          },
+          {
+            "Str": "Эрнест Резерфорд",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется область математики, изучающая свойства пространств, сохраняющиеся при непрерывных деформациях?",
+        "options": [
+          {
+            "Str": "Топология",
+            "IsRight": true
+          },
+          {
+            "Str": "Тригонометрия",
+            "IsRight": false
+          },
+          {
+            "Str": "Комбинаторика",
+            "IsRight": false
+          },
+          {
+            "Str": "Теория чисел",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой римский император официально сделал христианство религией Римской империи?",
+        "options": [
+          {
+            "Str": "Константин I",
+            "IsRight": false
+          },
+          {
+            "Str": "Феодосий I",
+            "IsRight": true
+          },
+          {
+            "Str": "Нерон",
+            "IsRight": false
+          },
+          {
+            "Str": "Диоклетиан",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется частица, состоящая из трёх кварков и являющаяся, например, протоном или нейтроном?",
+        "options": [
+          {
+            "Str": "Лептон",
+            "IsRight": false
+          },
+          {
+            "Str": "Барион",
+            "IsRight": true
+          },
+          {
+            "Str": "Мезон",
+            "IsRight": false
+          },
+          {
+            "Str": "Бозон",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой математический парадокс связан с множествами, содержащими сами себя в качестве элемента?",
+        "options": [
+          {
+            "Str": "Парадокс Рассела",
+            "IsRight": true
+          },
+          {
+            "Str": "Парадокс близнецов",
+            "IsRight": false
+          },
+          {
+            "Str": "Парадокс Ферми",
+            "IsRight": false
+          },
+          {
+            "Str": "Парадокс Банаха",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется механизм клеточного саморазрушения, запрограммированный генетически?",
+        "options": [
+          {
+            "Str": "Апоптоз",
+            "IsRight": true
+          },
+          {
+            "Str": "Фагоцитоз",
+            "IsRight": false
+          },
+          {
+            "Str": "Осмос",
+            "IsRight": false
+          },
+          {
+            "Str": "Митоз",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой философ написал «Так говорил Заратустра»?",
+        "options": [
+          {
+            "Str": "Фридрих Ницше",
+            "IsRight": true
+          },
+          {
+            "Str": "Иммануил Кант",
+            "IsRight": false
+          },
+          {
+            "Str": "Гегель",
+            "IsRight": false
+          },
+          {
+            "Str": "Мартин Хайдеггер",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется процесс, при котором тяжёлое атомное ядро делится на более лёгкие ядра с выделением энергии?",
+        "options": [
+          {
+            "Str": "Термоядерный синтез",
+            "IsRight": false
+          },
+          {
+            "Str": "Ядерное деление",
+            "IsRight": true
+          },
+          {
+            "Str": "Альфа-распад",
+            "IsRight": false
+          },
+          {
+            "Str": "Ионизация",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой древний город был столицей Хеттского царства?",
+        "options": [
+          {
+            "Str": "Хаттуса",
+            "IsRight": true
+          },
+          {
+            "Str": "Ур",
+            "IsRight": false
+          },
+          {
+            "Str": "Ниневия",
+            "IsRight": false
+          },
+          {
+            "Str": "Вавилон",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "13": [
+      {
+        "question": "Как называется теорема, согласно которой всякая конечная планарная связная графическая структура удовлетворяет V − E + F = 2?",
+        "options": [
+          {
+            "Str": "Теорема Эйлера",
+            "IsRight": true
+          },
+          {
+            "Str": "Теорема Кэли",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Гёделя",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Менгера",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой физик предсказал существование электромагнитных волн на основе своих уравнений?",
+        "options": [
+          {
+            "Str": "Джеймс Клерк Максвелл",
+            "IsRight": true
+          },
+          {
+            "Str": "Нильс Бор",
+            "IsRight": false
+          },
+          {
+            "Str": "Эрвин Шрёдингер",
+            "IsRight": false
+          },
+          {
+            "Str": "Макс Планк",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется теорема Гёделя, утверждающая существование истинных, но недоказуемых в определённых формальных системах утверждений?",
+        "options": [
+          {
+            "Str": "Теорема о неполноте",
+            "IsRight": true
+          },
+          {
+            "Str": "Теорема о полноте",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема компактности",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема о разрешимости",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется квантовое число, определяющее форму электронной орбитали?",
+        "options": [
+          {
+            "Str": "Главное квантовое число",
+            "IsRight": false
+          },
+          {
+            "Str": "Орбитальное квантовое число",
+            "IsRight": true
+          },
+          {
+            "Str": "Магнитное квантовое число",
+            "IsRight": false
+          },
+          {
+            "Str": "Спиновое квантовое число",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой договор 1494 года разделил недавно открытые территории между Испанией и Португалией?",
+        "options": [
+          {
+            "Str": "Тордесильясский договор",
+            "IsRight": true
+          },
+          {
+            "Str": "Сарагосский договор",
+            "IsRight": false
+          },
+          {
+            "Str": "Утрехтский договор",
+            "IsRight": false
+          },
+          {
+            "Str": "Мадридский договор",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется математическая функция, обратная экспоненте с основанием e?",
+        "options": [
+          {
+            "Str": "Косинус",
+            "IsRight": false
+          },
+          {
+            "Str": "Натуральный логарифм",
+            "IsRight": true
+          },
+          {
+            "Str": "Гипербола",
+            "IsRight": false
+          },
+          {
+            "Str": "Сигмоида",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой учёный открыл пульсары в 1967 году, работая вместе с Антони Хьюишем?",
+        "options": [
+          {
+            "Str": "Джоселин Белл Бернелл",
+            "IsRight": true
+          },
+          {
+            "Str": "Вера Рубин",
+            "IsRight": false
+          },
+          {
+            "Str": "Сесилия Пейн",
+            "IsRight": false
+          },
+          {
+            "Str": "Энни Джамп Кэннон",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется гипотеза о существовании массивной части Вселенной, не взаимодействующей с электромагнитным излучением?",
+        "options": [
+          {
+            "Str": "Тёмная материя",
+            "IsRight": true
+          },
+          {
+            "Str": "Тёмная энергия",
+            "IsRight": false
+          },
+          {
+            "Str": "Антиматерия",
+            "IsRight": false
+          },
+          {
+            "Str": "Кварковая материя",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой древнеегипетский фараон связан с гробницей KV62?",
+        "options": [
+          {
+            "Str": "Рамсес II",
+            "IsRight": false
+          },
+          {
+            "Str": "Тутанхамон",
+            "IsRight": true
+          },
+          {
+            "Str": "Хеопс",
+            "IsRight": false
+          },
+          {
+            "Str": "Эхнатон",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется принцип в квантовой механике, запрещающий двум фермионам занимать одно и то же квантовое состояние?",
+        "options": [
+          {
+            "Str": "Принцип дополнительности",
+            "IsRight": false
+          },
+          {
+            "Str": "Принцип запрета Паули",
+            "IsRight": true
+          },
+          {
+            "Str": "Принцип соответствия",
+            "IsRight": false
+          },
+          {
+            "Str": "Принцип суперпозиции",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "14": [
+      {
+        "question": "Как называется теорема, устанавливающая связь между симметриями физической системы и законами сохранения?",
+        "options": [
+          {
+            "Str": "Теорема Нётер",
+            "IsRight": true
+          },
+          {
+            "Str": "Теорема Пуанкаре",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Лиувилля",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Гаусса",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой математик доказал гипотезу Пуанкаре?",
+        "options": [
+          {
+            "Str": "Григорий Перельман",
+            "IsRight": true
+          },
+          {
+            "Str": "Эндрю Уайлс",
+            "IsRight": false
+          },
+          {
+            "Str": "Стивен Смейл",
+            "IsRight": false
+          },
+          {
+            "Str": "Алан Тьюринг",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется уравнение, описывающее эволюцию квантового состояния во времени?",
+        "options": [
+          {
+            "Str": "Уравнение Шрёдингера",
+            "IsRight": true
+          },
+          {
+            "Str": "Уравнение Дирака",
+            "IsRight": false
+          },
+          {
+            "Str": "Уравнение Эйлера",
+            "IsRight": false
+          },
+          {
+            "Str": "Уравнение Навье — Стокса",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой физик предсказал существование античастицы электрона?",
+        "options": [
+          {
+            "Str": "Поль Дирак",
+            "IsRight": true
+          },
+          {
+            "Str": "Эрвин Шрёдингер",
+            "IsRight": false
+          },
+          {
+            "Str": "Вольфганг Паули",
+            "IsRight": false
+          },
+          {
+            "Str": "Энрико Ферми",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется предел отношения массы объекта к его объёму?",
+        "options": [
+          {
+            "Str": "Плотность",
+            "IsRight": true
+          },
+          {
+            "Str": "Давление",
+            "IsRight": false
+          },
+          {
+            "Str": "Импульс",
+            "IsRight": false
+          },
+          {
+            "Str": "Удельная теплоёмкость",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой древнегреческий математик считается автором трактата «Начала»?",
+        "options": [
+          {
+            "Str": "Архимед",
+            "IsRight": false
+          },
+          {
+            "Str": "Евклид",
+            "IsRight": true
+          },
+          {
+            "Str": "Пифагор",
+            "IsRight": false
+          },
+          {
+            "Str": "Аполлоний",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой объект является центром Млечного Пути?",
+        "options": [
+          {
+            "Str": "Нейтронная звезда",
+            "IsRight": false
+          },
+          {
+            "Str": "Сверхмассивная чёрная дыра",
+            "IsRight": true
+          },
+          {
+            "Str": "Белый карлик",
+            "IsRight": false
+          },
+          {
+            "Str": "Квазар",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется проблема, связанная с вопросом о том, почему наблюдаемая Вселенная содержит значительно больше материи, чем антиматерии?",
+        "options": [
+          {
+            "Str": "Проблема горизонта",
+            "IsRight": false
+          },
+          {
+            "Str": "Барионная асимметрия",
+            "IsRight": true
+          },
+          {
+            "Str": "Проблема плоскостности",
+            "IsRight": false
+          },
+          {
+            "Str": "Парадокс Ферми",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется алгоритмическая машина, описанная Аланом Тьюрингом в 1936 году?",
+        "options": [
+          {
+            "Str": "Машина Тьюринга",
+            "IsRight": true
+          },
+          {
+            "Str": "Машина фон Неймана",
+            "IsRight": false
+          },
+          {
+            "Str": "Машина Поста",
+            "IsRight": false
+          },
+          {
+            "Str": "Лямбда-машина",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой физический принцип утверждает, что никакая информация не может передаваться быстрее скорости света в вакууме?",
+        "options": [
+          {
+            "Str": "Принцип эквивалентности",
+            "IsRight": false
+          },
+          {
+            "Str": "Принцип причинности",
+            "IsRight": true
+          },
+          {
+            "Str": "Принцип неопределённости",
+            "IsRight": false
+          },
+          {
+            "Str": "Принцип Паули",
+            "IsRight": false
+          }
+        ]
+      }
+    ],
+    "15": [
+      {
+        "question": "Какая теорема утверждает, что всякая симметричная матрица над действительными числами ортогонально диагонализируема?",
+        "options": [
+          {
+            "Str": "Спектральная теорема",
+            "IsRight": true
+          },
+          {
+            "Str": "Теорема Кэли — Гамильтона",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Гаусса",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Жордана",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется теорема, утверждающая, что любая гладкая компактная двумерная поверхность классифицируется по роду и ориентируемости?",
+        "options": [
+          {
+            "Str": "Теорема классификации поверхностей",
+            "IsRight": true
+          },
+          {
+            "Str": "Теорема Гёделя",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Ферма",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Банаха — Тарского",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется нерешённая проблема, связанная с существованием и гладкостью решений уравнений Навье — Стокса в трёх измерениях?",
+        "options": [
+          {
+            "Str": "Проблема Римана",
+            "IsRight": false
+          },
+          {
+            "Str": "Проблема существования и гладкости Навье — Стокса",
+            "IsRight": true
+          },
+          {
+            "Str": "Проблема четырёх красок",
+            "IsRight": false
+          },
+          {
+            "Str": "Проблема остановки",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется гипотеза о нетривиальных нулях дзета-функции Римана, согласно которой их действительные части равны 1/2?",
+        "options": [
+          {
+            "Str": "Гипотеза Пуанкаре",
+            "IsRight": false
+          },
+          {
+            "Str": "Гипотеза Римана",
+            "IsRight": true
+          },
+          {
+            "Str": "Гипотеза Коллатца",
+            "IsRight": false
+          },
+          {
+            "Str": "Гипотеза Ходжа",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется теорема, утверждающая, что невозможно построить алгоритм, который для любой программы и входных данных определяет, остановится ли программа?",
+        "options": [
+          {
+            "Str": "Теорема о неполноте",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема об остановке",
+            "IsRight": true
+          },
+          {
+            "Str": "Теорема Шеннона",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Черча",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какой физический эффект объясняет потерю энергии фотоном при рассеянии на свободном электроне?",
+        "options": [
+          {
+            "Str": "Фотоэффект",
+            "IsRight": false
+          },
+          {
+            "Str": "Эффект Комптона",
+            "IsRight": true
+          },
+          {
+            "Str": "Эффект Доплера",
+            "IsRight": false
+          },
+          {
+            "Str": "Эффект Джозефсона",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется теоретически предсказанная граница, за которой информация не может покинуть чёрную дыру?",
+        "options": [
+          {
+            "Str": "Сфера Шварцшильда",
+            "IsRight": false
+          },
+          {
+            "Str": "Горизонт событий",
+            "IsRight": true
+          },
+          {
+            "Str": "Эргосфера",
+            "IsRight": false
+          },
+          {
+            "Str": "Аккреционный диск",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется квантовая теорема, утверждающая, что неизвестное квантовое состояние невозможно идеально скопировать?",
+        "options": [
+          {
+            "Str": "Теорема о невозможности клонирования",
+            "IsRight": true
+          },
+          {
+            "Str": "Теорема Белла",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Нётер",
+            "IsRight": false
+          },
+          {
+            "Str": "Теорема Вигнера",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Как называется неравенство, показывающее ограничения на корреляции между результатами локальных скрытых переменных в квантовой механике?",
+        "options": [
+          {
+            "Str": "Неравенства Белла",
+            "IsRight": true
+          },
+          {
+            "Str": "Неравенства Коши",
+            "IsRight": false
+          },
+          {
+            "Str": "Неравенства Маркова",
+            "IsRight": false
+          },
+          {
+            "Str": "Неравенства Гёльдера",
+            "IsRight": false
+          }
+        ]
+      },
+      {
+        "question": "Какая из перечисленных задач относится к семи задачам тысячелетия Института Клэя и до сих пор остаётся нерешённой?",
+        "options": [
+          {
+            "Str": "Гипотеза Пуанкаре",
+            "IsRight": false
+          },
+          {
+            "Str": "Последняя теорема Ферма",
+            "IsRight": false
+          },
+          {
+            "Str": "Гипотеза Римана",
+            "IsRight": true
+          },
+          {
+            "Str": "Теорема о четырёх красках",
+            "IsRight": false
+          }
+        ]
+      }
+    ]
+  }
+}

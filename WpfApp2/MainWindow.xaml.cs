@@ -17,9 +17,15 @@ namespace WpfApp2
     public partial class MainWindow : Window
     {
         public MainWindow()
-        {
+        {              
             InitializeComponent();
         }
+        //public void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        //{
+        //    var window = (Window)sender;
+        //    double width = window.ActualWidth;
+        //    double height = window.ActualHeight;
+        //}
 
         //private void Button_Click(object sender, RoutedEventArgs e)
         //{
