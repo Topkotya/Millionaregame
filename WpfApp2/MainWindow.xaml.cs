@@ -26,7 +26,6 @@ namespace WpfApp2
         //    double width = window.ActualWidth;
         //    double height = window.ActualHeight;
         //}
-
         //private void Button_Click(object sender, RoutedEventArgs e)
         //{
 

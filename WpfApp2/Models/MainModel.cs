@@ -8,6 +8,7 @@ public class MainModel
 {
     private string rightAnswer;
     private int currentRound = 0;
+    private OptionModel[] Options;
     private QuestionModel[] questions;
     public string CurrentRound => (currentRound + 1).ToString();
     public MainModel()
@@ -17,7 +18,7 @@ public class MainModel
                     ?? throw new InvalidOperationException("Не удалось десериализовать questions.json");
         questions = Questions.GetQuestions();
     }
-    public bool GetAnswer(string answer)
+    public bool CheckAnswer(string answer)
     {
         if (answer == rightAnswer)
         {
@@ -31,16 +32,31 @@ public class MainModel
         return questions[currentRound].question;
     }
     private Random random = new Random();
+    public int[] GetIncorrectAnswersIDs()
+    {
+        int[] tempNotRightAnswers = Options.Select((x, index) => new { Value = x, Index = index })
+                      .Where(pair => pair.Value.IsRight == false)
+                      .Select(pair => pair.Index)
+                      .ToArray();        
+       
+        for (int i = tempNotRightAnswers.Length - 1; i > 0; i--)
+        {
+            int j = random.Next(2);
+            (tempNotRightAnswers[i], tempNotRightAnswers[j]) = (tempNotRightAnswers[j], tempNotRightAnswers[i]);
+        }        
+
+        return [tempNotRightAnswers[0], tempNotRightAnswers[1]];
+    }
     public string[] GetAnswers()
     {
-        var options = questions[currentRound].options.ToArray();
-        for (int i = options.Length - 1; i > 0; i--)
+        Options = questions[currentRound].options.ToArray();
+        for (int i = Options.Length - 1; i > 0; i--)
         {
             int j = random.Next(i + 1);
-            (options[i], options[j]) = (options[j], options[i]);
+            (Options[i], Options[j]) = (Options[j], Options[i]);
         }
-        rightAnswer = options.First(x => x.IsRight).Str;
-        return options.Select(x => x.Str).ToArray();
+        rightAnswer = Options.First(x => x.IsRight).Str;        
+        return Options.Select(x => x.Str).ToArray();        
     }
 }
 

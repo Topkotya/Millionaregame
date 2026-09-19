@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" MinHeight="550" MinWidth="800" Height="550" Width="800">
+        Title="MainWindow" MinHeight="800" MinWidth="1000" Height="800" Width="1000">
 
     <Window.DataContext>
         <local:MainViewModel/>
@@ -117,54 +117,143 @@
     <Grid>
         <Image Source="/Assets/pngtree-blue-fantasy-technology-background-material-backgroundpsd-backgroundadbackground-psdcreative-image_58500.png"
                Stretch="UniformToFill"/>
-
+        <Button Grid.Row="0"                                
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"                            
+                                Margin="760,30,10,700"
+                                Background="{Binding ErrorRightBackground, TargetNullValue={StaticResource BlueGradient}}"
+                                Template="{StaticResource MillionaireButtonTemplate}"
+                                Command="{Binding ErrorRightCommand}"
+                                IsEnabled="{Binding ErrorRightAvailable}">
+            <Viewbox Stretch="Uniform" StretchDirection="DownOnly">
+                <TextBlock FontSize="20">
+                                        <Run Text="⚡ " Foreground="#FFE9D554"/>
+                                        <Run Text="Право на ошибку" Foreground="White"/>
+                </TextBlock>
+            </Viewbox>
+        </Button>
+        
+        <Button Grid.Row="0"                                
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"                            
+                                Margin="560,30,240,700"
+                                Background="{Binding FiftyFiftyBackground, TargetNullValue={StaticResource BlueGradient}}"
+                                Template="{StaticResource MillionaireButtonTemplate}"
+                                Command="{Binding FiftyFiftyCommand}"
+                                IsEnabled="{Binding FiftyFiftyAvailable}">
+            
+            <Viewbox Stretch="Uniform" StretchDirection="DownOnly">
+                <TextBlock FontSize="20">                                        
+                    <Run Text="50/50" Foreground="White"/>
+                </TextBlock>
+            </Viewbox>
+        </Button>
+        
         <Viewbox Stretch="Uniform"
              StretchDirection="UpOnly"             
              HorizontalAlignment="Center"
              VerticalAlignment="Center">
-
+        
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="170"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-
-                <ListView x:Name="BooksListView"
+        
+                <ItemsControl x:Name="BooksListView"
                               Grid.Row="0"
                               ItemsSource="{Binding Rewards}"                              
                               BorderThickness="0"
                               Background="Transparent">
 
-                    <ListView.ItemTemplate>
+                    <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <Button Padding="10"
-                    Margin="0,0,0,5"
-                    Width="150"
-                    Height="25"
-                    Background="{Binding State, Converter={StaticResource RewardBrushConverter}, TargetNullValue={StaticResource BlueGradient}}"
-                    Template="{StaticResource MillionaireButtonTemplate}">
+                                    Margin="0,0,0,5"                                    
+                                    Width="150"
+                                    Height="25"                                    
+                                    Template="{StaticResource MillionaireButtonTemplate}">
+                                
+                                <Button.Style>
+                                    <Style TargetType="Button">
 
-                                <Viewbox Stretch="Uniform"
-                         StretchDirection="DownOnly">
+                                        <!-- Базовая кисть, которую можно анимировать -->
 
-                                    <TextBlock FontSize="20"
-                               Padding="0,0,100,0">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <StaticResource ResourceKey="BlueGradient"/>
+                                            </Setter.Value>
+                                        </Setter>
 
-                        <Run Text="📖 "
-                             Foreground="#FFE9D554"/>
+                                        <Style.Triggers>
+                                            <!-- CURRENT -->
+                                            <DataTrigger Binding="{Binding State}" Value="Current">
+                                                <DataTrigger.EnterActions>
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation Storyboard.TargetProperty="(Button.Background).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)"
+                                                                            To="#FAB005"
+                                                                            Duration="0:0:0.80">
+                                                                <ColorAnimation.EasingFunction>
+                                                                    <CubicEase EasingMode="EaseInOut"/>
+                                                                </ColorAnimation.EasingFunction>
+                                                            </ColorAnimation>
 
-                        <Run Text="{Binding Reward}"
-                             Foreground="White"/>
+                                                            <ColorAnimation Storyboard.TargetProperty="(Button.Background).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)"
+                                                                            To="#FAB005"
+                                                                            Duration="0:0:0.80">
+                                                                <ColorAnimation.EasingFunction>
+                                                                    <CubicEase EasingMode="EaseInOut"/>
+                                                                </ColorAnimation.EasingFunction>
+                                                            </ColorAnimation>
 
+                                                            <ColorAnimation Storyboard.TargetProperty="(Button.Background).(LinearGradientBrush.GradientStops)[2].(GradientStop.Color)"
+                                                                            To="#FAB005"
+                                                                            Duration="0:0:0.80">
+                                                                <ColorAnimation.EasingFunction>
+                                                                    <CubicEase EasingMode="EaseInOut"/>
+                                                                </ColorAnimation.EasingFunction>
+                                                            </ColorAnimation>
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </DataTrigger.EnterActions>
+                                            </DataTrigger>
+                                            
+                                            <!-- COMPLETED -->
+                                            <DataTrigger Binding="{Binding State}" Value="Completed">
+                                                <DataTrigger.EnterActions>
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation Storyboard.TargetProperty="(Button.Background).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)"
+                                                                            To="#37C337"
+                                                                            Duration="0:0:0.80"/>
+                                                            <ColorAnimation Storyboard.TargetProperty="(Button.Background).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)"
+                                                                            To="#37C337"
+                                                                            Duration="0:0:0.80"/>
+                                                            <ColorAnimation Storyboard.TargetProperty="(Button.Background).(LinearGradientBrush.GradientStops)[2].(GradientStop.Color)"
+                                                                            To="#37C337"                                                                            
+                                                                            Duration="0:0:0.80"/>
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </DataTrigger.EnterActions>
+
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                
+                                <Viewbox Stretch="Uniform" StretchDirection="DownOnly">
+                                    <TextBlock FontSize="20" Padding="0,0,100,0">
+                                        <Run Text="📖 " Foreground="#FFE9D554"/>
+                                        <Run Text="{Binding Reward}" Foreground="White"/>
                                     </TextBlock>
-
                                 </Viewbox>
 
                             </Button>
                         </DataTemplate>
-                    </ListView.ItemTemplate>
+                    </ItemsControl.ItemTemplate>
 
-                </ListView>
+                </ItemsControl>
 
                 
 
@@ -176,18 +265,48 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
+                    <ItemsControl Grid.Row="1" HorizontalAlignment="Center" ItemsSource="{Binding Answers}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Columns="2" Width="400" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+
+                                <Button Background="{Binding Background, TargetNullValue={StaticResource BlueGradient}}"                                        
+                                        Margin="1"
+                                        Height="50"
+                                        Visibility="{Binding Visability}"
+                                        Template="{StaticResource MillionaireButtonTemplate}"
+                                        Command="{Binding DataContext.SubmitCommand,RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                        CommandParameter="{Binding Text}">
+
+                                    <Viewbox Stretch="Uniform" StretchDirection="DownOnly">
+                                        <TextBlock FontSize="20" Padding="0,0,100,0">
+                                            <Run Text="{Binding Letter}" Foreground="#FFE9D554" />
+                                            <Run Text=": " Foreground="#FFE9D554" />
+                                            <Run Text="{Binding Text}" Foreground="White" />
+                                        </TextBlock>
+                                    </Viewbox>
+                                </Button>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
                     <TextBox Grid.Row="2"
-                     Foreground="White"
-                     Background="{StaticResource BlueGradient}"
-                     IsReadOnly="True"
-                     TextWrapping="Wrap"
-                     Text="{Binding PrintRound}"
-                     HorizontalAlignment="Center"                                          
-                     Width="500"
-                     Height="30"
-                     TextAlignment="Center"
-                     Margin="0,10,0,45"
-                     Template="{StaticResource MillionaireTextBoxTemplate}"/>
+                             Foreground="White"
+                             Background="{StaticResource BlueGradient}"
+                             IsReadOnly="True"
+                             TextWrapping="Wrap"
+                             Text="{Binding PrintRound}"
+                             HorizontalAlignment="Center"                                          
+                             Width="500"
+                             Height="30"
+                             TextAlignment="Center"
+                             Margin="0,10,0,45"
+                             Template="{StaticResource MillionaireTextBoxTemplate}"/>
 
                     <TextBox Grid.Row="0"
                  Foreground="White"
@@ -215,11 +334,12 @@
                             <RowDefinition Height="55"/>
                         </Grid.RowDefinitions>
 
-                        <Button Grid.Column="0"
+                        <!--<Button Grid.Column="0"
                         Grid.Row="0"                        
                         Background="{Binding Answer1Background, TargetNullValue={StaticResource BlueGradient}}"
                         Margin="1"
                         Height="50"
+                        Visibility="{Binding Answer1IsVisible}"
                         Template="{StaticResource MillionaireButtonTemplate}"
                         Command="{Binding SubmitCommand}"
                         CommandParameter="{Binding Answer1}">
@@ -242,6 +362,7 @@
                         Background="{Binding Answer2Background, TargetNullValue={StaticResource BlueGradient}}"
                         Margin="0"
                         Height="50"
+                        Visibility="{Binding Answer2IsVisible}"
                         Template="{StaticResource MillionaireButtonTemplate}"
                         Command="{Binding SubmitCommand}"
                         CommandParameter="{Binding Answer2}">
@@ -264,6 +385,7 @@
                         Background="{Binding Answer3Background, TargetNullValue={StaticResource BlueGradient}}"
                         Margin="0"
                         Height="50"
+                        Visibility="{Binding Answer3IsVisible}"
                         Template="{StaticResource MillionaireButtonTemplate}"
                         Command="{Binding SubmitCommand}"
                         CommandParameter="{Binding Answer3}">
@@ -273,8 +395,8 @@
 
                                 <TextBlock FontSize="20"
                                    Padding="0,0,100,0">
-                            <Run Text="C: " Foreground="#FFE9D554"/>
-                            <Run Text="{Binding Answer3}"
+                                   <Run Text="C: " Foreground="#FFE9D554"/>
+                                   <Run Text="{Binding Answer3}"
                                  Foreground="White"/>
                                 </TextBlock>
 
@@ -286,6 +408,7 @@
                         Background="{Binding Answer4Background, TargetNullValue={StaticResource BlueGradient}}"
                         Margin="1"
                         Height="50"
+                        Visibility="{Binding Answer4IsVisible}"
                         Template="{StaticResource MillionaireButtonTemplate}"
                         Command="{Binding SubmitCommand}"
                         CommandParameter="{Binding Answer4}">
@@ -301,10 +424,10 @@
                                 </TextBlock>
 
                             </Viewbox>
-                        </Button>
+                        </Button>-->
 
                     </Grid>
-
+                    
                 </Grid>
 
             </Grid>

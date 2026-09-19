@@ -20,7 +20,45 @@ namespace WpfApp2
         private AnimationHelper animator = new AnimationHelper();
         private const int WinningRound = 16;
         private bool isAnswering;
+        public bool FiftyFiftyAvailable
+        {
+            get => field;
+            set
+            {
+                field = value;
+                OnPropertyChanged(nameof(FiftyFiftyAvailable));
+            }
+        }
+        public bool FiftyFiftyActive
+        {
+            get => field;
+            set
+            {
+                field = value;
+                OnPropertyChanged(nameof(FiftyFiftyActive));
+            }
+        }
+        public ICommand FiftyFiftyCommand { get; }
+        public bool ErrorRightAvailable
+        {
+            get => field;
+            set
+            {
+                field = value;
+                OnPropertyChanged(nameof(ErrorRightAvailable));
+            }
+        }
 
+        public bool ErrorRightActive
+        {
+            get => field;
+            set
+            {
+                field = value;
+                OnPropertyChanged(nameof(ErrorRightActive));
+            }
+        }
+        public ICommand ErrorRightCommand { get; }
         public bool WinScreenState
         {
             get => field;
@@ -39,42 +77,23 @@ namespace WpfApp2
                 OnPropertyChanged(nameof(LoseScreenState));
             }
         }
-        public Brush Answer1Background
+        public Brush FiftyFiftyBackground
         {
             get => field;
             set
             {
                 field = value;
-                OnPropertyChanged(nameof(Answer1Background));
-            }
-        }
-        public Brush Answer2Background
-        {
-            get => field;
-            set
-            {
-                field = value;
-                OnPropertyChanged(nameof(Answer2Background));
+                OnPropertyChanged(nameof(FiftyFiftyBackground));
             }
         }
 
-        public Brush Answer3Background
+        public Brush ErrorRightBackground
         {
             get => field;
             set
             {
                 field = value;
-                OnPropertyChanged(nameof(Answer3Background));
-            }
-        }
-
-        public Brush Answer4Background
-        {
-            get => field;
-            set
-            {
-                field = value;
-                OnPropertyChanged(nameof(Answer4Background));
+                OnPropertyChanged(nameof(ErrorRightBackground));
             }
         }
         public string PrintRound
@@ -86,47 +105,6 @@ namespace WpfApp2
                 OnPropertyChanged(nameof(PrintRound));
             }
         }
-
-        public string Answer1
-        {
-            get => field;
-            set
-            {
-                field = value;
-                OnPropertyChanged(nameof(Answer1));
-            }
-        }
-
-        public string Answer2
-        {
-            get => field;
-            set
-            {
-                field = value;
-                OnPropertyChanged(nameof(Answer2));
-            }
-        }
-
-        public string Answer3
-        {
-            get => field;
-            set
-            {
-                field = value;
-                OnPropertyChanged(nameof(Answer3));
-            }
-        }
-
-        public string Answer4
-        {
-            get => field;
-            set
-            {
-                field = value;
-                OnPropertyChanged(nameof(Answer4));
-            }
-        }
-
         public string QuestionText
         {
             get => mod.GetQuestion();
@@ -135,68 +113,134 @@ namespace WpfApp2
                 field = value;
                 OnPropertyChanged(nameof(QuestionText));
             }
-        }
+        } = "Visible";
 
         public ICommand SubmitCommand { get; }
 
         private void FieldAnswers()
         {
             var answers = mod.GetAnswers();
-            Answer1 = answers[0];
-            Answer2 = answers[1];
-            Answer3 = answers[2];
-            Answer4 = answers[3];
+            for (int i = 0; i < answers.Length; i++)
+            {
+                Answers[i].Text = answers[i];
+            }
             OnPropertyChanged(nameof(QuestionText));
+        }
+        private async void OnErrorRight(object parameter)
+        {
+            if (!ErrorRightAvailable || ErrorRightActive)
+                return;
+
+            ErrorRightActive = true;
+            await animator.PlayHintAnimation(b => ErrorRightBackground = b);
+        }
+        private async void OnFiftyFifty(object parameter)
+        {
+            if (!FiftyFiftyAvailable || FiftyFiftyActive)
+                return;
+
+            int[] array = mod.GetIncorrectAnswersIDs();
+            for (int i = 0; i < array.Length; i++)
+            {
+                switch (array[i])
+                {
+                    case 0:
+                        Answers[0].Visability = "Hidden";
+                        break;
+
+                    case 1:
+                        Answers[1].Visability = "Hidden";
+                        break;
+
+                    case 2:
+                        Answers[2].Visability = "Hidden";
+                        break;
+
+                    case 3:
+                        Answers[3].Visability = "Hidden";
+                        break;
+                }
+            }
+
+            FiftyFiftyActive = true;
+            FiftyFiftyAvailable = false;
+            await animator.PlayHintAnimation(b => FiftyFiftyBackground = b);
         }
 
         public MainViewModel()
         {
             PrintRound = "1";
             InitializeRewards();
+            InitializeAnswers();
             FieldAnswers();
+
             SubmitCommand = new RelayCommand(OnSubmit, CanSubmit);
+            ErrorRightCommand = new RelayCommand(OnErrorRight);
+            FiftyFiftyCommand = new RelayCommand(OnFiftyFifty);
+
+            ErrorRightAvailable = true;
+            FiftyFiftyAvailable = true;
+            FiftyFiftyActive = false;
+        }
+        private void ResetVisibility()
+        {
+            foreach (var item in Answers) 
+            {
+                item.Visability = "Visible";
+            }
         }
         private async Task SetAnswerColor(string answer, bool isCorrect)
         {
-            if (answer == Answer1) await animator.PlayButtonAnimation(b => Answer1Background = b, isCorrect);
-            else if (answer == Answer2) await animator.PlayButtonAnimation(b => Answer2Background = b, isCorrect);
-            else if (answer == Answer3) await animator.PlayButtonAnimation(b => Answer3Background = b, isCorrect);
-            else if (answer == Answer4) await animator.PlayButtonAnimation(b => Answer4Background = b, isCorrect);
+            var answerr = Answers.First(a => a.Text == answer);
+            await animator.PlayButtonAnimation(b => answerr.Background = b, isCorrect);            
         }
         private async void OnSubmit(object parameter)
         {
             if (isAnswering) return;
             isAnswering = true;
             string answer = parameter.ToString()!;
-            bool isCorrect = mod.GetAnswer(answer);
-
+            bool isCorrect = mod.CheckAnswer(answer);
             // Подсвечиваем выбранный ответ
             await SetAnswerColor(answer, isCorrect);
 
             if (isCorrect)
             {
-                if (int.TryParse(mod.CurrentRound, out int result) && result == WinningRound) //переменная result это текущий раунд
+                // Правильный ответ не тратит право на ошибку
+                ErrorRightActive = false;
+                if (int.TryParse(mod.CurrentRound, out int result) && result == WinningRound)
                 {
                     WinScreenState = true;
                     return;
                 }
                 int tempResult = result - 2;
-                PrintRound = mod.CurrentRound; // перешли на следующий раунд                
-                Rewards[result - 1].State = ERewardState.current;                
-                while(tempResult >= 0)
+                PrintRound = mod.CurrentRound;
+                Rewards[result - 1].State = ERewardState.Current;
+                while (tempResult >= 0)
                 {
-                    Rewards[tempResult--].State = ERewardState.completed;                    
-                }                
+                    Rewards[tempResult--].State = ERewardState.Completed;
+                }
 
-                // Возвращаем кнопкам исходный градиент
-                Answer1Background = null;
-                Answer2Background = null;
-                Answer3Background = null;
-                Answer4Background = null;
+                foreach (var item in Answers)
+                {
+                    item.Background = null;
+                }
                 FieldAnswers();
+                ResetVisibility();
             }
             else
             {
+                if (ErrorRightActive)
+                {
+                    ErrorRightActive = false;
+                    ErrorRightAvailable = false;
+                    foreach (var item in Answers)
+                    {
+                        item.Background = null;
+                    }
+                    isAnswering = false;
+                    return;
+                }
+                // Обычная неправильная попытка
                 LoseScreenState = true;
                 return;
             }
@@ -211,7 +255,14 @@ namespace WpfApp2
             List<RewardView> tempRewards = Enumerable.Range(0,15).Select(x => new RewardView() { Reward = (Math.Pow(2, x) * 300).ToString() }).ToList();
             Rewards = new ObservableCollection<RewardView>(tempRewards);
         }
+        private void InitializeAnswers()
+        {
+            List<AnswerItem> tempAnswers = Enumerable.Range(0, 4).Select(x => new AnswerItem() { Text = "text", Letter = "letter", Visability = "Visability"}).ToList();
+            tempAnswers[0].Letter = "A"; tempAnswers[1].Letter = "B"; tempAnswers[2].Letter = "C"; tempAnswers[3].Letter = "D";
+            Answers = new ObservableCollection<AnswerItem>(tempAnswers);
+        }
         public ObservableCollection<RewardView> Rewards { get; set; } = new ObservableCollection<RewardView>();
+        public ObservableCollection<AnswerItem> Answers { get; set; } = new ObservableCollection<AnswerItem>();
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string name) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }

@@ -24,7 +24,7 @@ namespace WpfApp2
                 field = value;
                 OnPropertyChanged(nameof(State));
             }
-        } = ERewardState.locked;
+        } = ERewardState.Locked;
         public event PropertyChangedEventHandler? PropertyChanged;        
         protected void OnPropertyChanged(string name) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }

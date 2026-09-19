@@ -15,6 +15,50 @@ namespace WpfApp2
             byte b = (byte)(start.B + (end.B - start.B) * t);
             return Color.FromArgb(a, r, g, b);
         }
+        public async Task PlayHintAnimation(Action<Brush> brushCallBack)
+        {
+            double t = 0;
+
+            Color blue = Color.FromRgb(11, 47, 120);
+            Color gold = Color.FromRgb(250, 176, 5);
+            Color darkGold = Color.FromRgb(190, 130, 0);
+
+            // Синий -> золотой
+            while (t < 1)
+            {
+                brushCallBack(new SolidColorBrush(LerpColor(blue, gold, t)));
+                t += 0.04;
+                await Task.Delay(15);
+            }
+
+            // Золотой -> тёмно-золотой
+            t = 0;
+            while (t < 1)
+            {
+                brushCallBack(new SolidColorBrush(LerpColor(gold, darkGold, t)));
+                t += 0.04;
+                await Task.Delay(25);
+            }
+
+            // Тёмно-золотой -> золотой
+            while (t > 0)
+            {
+                brushCallBack(new SolidColorBrush(LerpColor(gold, darkGold, t)));
+                t -= 0.04;
+                await Task.Delay(20);
+            }
+
+            // Золотой -> синий
+            t = 0;
+            while (t < 1)
+            {
+                brushCallBack(new SolidColorBrush(LerpColor(gold, blue, t)));
+                t += 0.04;
+                await Task.Delay(15);
+            }
+
+            brushCallBack(new SolidColorBrush(blue));
+        }
         public async Task PlayButtonAnimation(Action<Brush> brushCallBack, bool isCorrect)
         {
             double t = 0;

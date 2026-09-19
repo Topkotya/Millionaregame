@@ -15,9 +15,9 @@ namespace WpfApp2
             var state = (ERewardState)value;
             switch (state)
             {
-                case ERewardState.current:
+                case ERewardState.Current:
                     return new SolidColorBrush(System.Windows.Media.Color.FromRgb(250,176,5));
-                case ERewardState.completed:
+                case ERewardState.Completed:
                     return new SolidColorBrush(System.Windows.Media.Color.FromRgb(55, 195, 55));
                 default:
                     return null;
