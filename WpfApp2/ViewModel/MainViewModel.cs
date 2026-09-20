@@ -19,7 +19,21 @@ namespace WpfApp2
         private MainModel mod = new MainModel();
         private AnimationHelper animator = new AnimationHelper();
         private const int WinningRound = 16;
-        private bool isAnswering;
+        private bool isAnswering;        
+        public EGameState GameResult
+        {
+            get => field;
+            set
+            {
+                if (field != value)
+                {
+                    field = value;
+                    OnPropertyChanged(nameof(GameResult));
+                }
+            }
+        } = EGameState.Playing;
+
+        public ICommand RestartCommand { get; }
         public bool FiftyFiftyAvailable
         {
             get => field;
@@ -59,24 +73,6 @@ namespace WpfApp2
             }
         }
         public ICommand ErrorRightCommand { get; }
-        public bool WinScreenState
-        {
-            get => field;
-            set
-            {
-                field = value;
-                OnPropertyChanged(nameof(WinScreenState));
-            }
-        }
-        public bool LoseScreenState
-        {
-            get => field;
-            set
-            {
-                field = value;
-                OnPropertyChanged(nameof(LoseScreenState));
-            }
-        }
         public Brush FiftyFiftyBackground
         {
             get => field;
@@ -166,6 +162,20 @@ namespace WpfApp2
             FiftyFiftyAvailable = false;
             await animator.PlayHintAnimation(b => FiftyFiftyBackground = b);
         }
+        private void RestartGame()
+        {
+            mod = new MainModel();
+            PrintRound = "1";
+            InitializeRewards();
+            InitializeAnswers();
+            FieldAnswers();
+            FiftyFiftyAvailable = true;
+            ErrorRightAvailable = true;
+            FiftyFiftyActive = false;
+            ErrorRightActive = false;
+            isAnswering = false;
+            GameResult = EGameState.Playing;
+        }
 
         public MainViewModel()
         {
@@ -177,6 +187,7 @@ namespace WpfApp2
             SubmitCommand = new RelayCommand(OnSubmit, CanSubmit);
             ErrorRightCommand = new RelayCommand(OnErrorRight);
             FiftyFiftyCommand = new RelayCommand(OnFiftyFifty);
+            RestartCommand = new RelayCommand(_ => RestartGame());
 
             ErrorRightAvailable = true;
             FiftyFiftyAvailable = true;
@@ -209,7 +220,7 @@ namespace WpfApp2
                 ErrorRightActive = false;
                 if (int.TryParse(mod.CurrentRound, out int result) && result == WinningRound)
                 {
-                    WinScreenState = true;
+                    GameResult = EGameState.Win;
                     return;
                 }
                 int tempResult = result - 2;
@@ -241,7 +252,7 @@ namespace WpfApp2
                     return;
                 }
                 // Обычная неправильная попытка
-                LoseScreenState = true;
+                GameResult = EGameState.Lose;
                 return;
             }
             isAnswering = false;
