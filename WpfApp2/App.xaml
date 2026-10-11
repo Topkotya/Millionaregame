@@ -4,6 +4,96 @@
              xmlns:local="clr-namespace:WpfApp2"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        
+        <LinearGradientBrush x:Key="BlueGradient" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#FF174EA6" Offset="0"/>
+            <GradientStop Color="#FF0B2F78" Offset="0.5"/>
+            <GradientStop Color="#FF061B4D" Offset="1"/>
+        </LinearGradientBrush>
+        
+        <ControlTemplate x:Key="MillionaireButtonTemplate" TargetType="Button">
+            <Grid>
+                <!-- Фон ромбовидной кнопки -->
+                <Path Stretch="Fill"
+                      Fill="{TemplateBinding Background}"
+                      Stroke="#FFB8CFFF"
+                      StrokeThickness="2"
+                      Data="M 18,0 L 100,0 L 118,25 L 100,50 L 18,50 L 0,25 Z"/>
+
+                <!-- Контент кнопки -->
+                <ContentPresenter Margin="20,0"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  Content="{TemplateBinding Content}"
+                                  ContentTemplate="{TemplateBinding ContentTemplate}"/>
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="MillionaireTextBoxTemplate" TargetType="TextBox">
+            <Grid>
+                <!-- Ромбовидный фон -->
+                <Path Stretch="Fill"
+                      Fill="{TemplateBinding Background}"
+                      Stroke="#FFB8CFFF"
+                      StrokeThickness="2">
+
+                    <Path.Data>
+                        <PathGeometry>
+                            <PathFigure StartPoint="23,0">
+
+                                <LineSegment Point="95,0"/>
+
+                                <!-- Правый верх -->
+                                <QuadraticBezierSegment
+                            Point1="103,0"
+                            Point2="108,7"/>
+
+                                <QuadraticBezierSegment
+                            Point1="115,17"
+                            Point2="118,25"/>
+
+                                <!-- Правый низ -->
+                                <QuadraticBezierSegment
+                            Point1="115,33"
+                            Point2="108,43"/>
+
+                                <QuadraticBezierSegment
+                            Point1="103,50"
+                            Point2="95,50"/>
+
+                                <LineSegment Point="23,50"/>
+
+                                <!-- Левый низ -->
+                                <QuadraticBezierSegment
+                            Point1="15,50"
+                            Point2="10,43"/>
+
+                                <QuadraticBezierSegment
+                            Point1="3,33"
+                            Point2="0,25"/>
+
+                                <!-- Левый верх -->
+                                <QuadraticBezierSegment
+                            Point1="3,17"
+                            Point2="10,7"/>
+
+                                <QuadraticBezierSegment
+                            Point1="15,0"
+                            Point2="23,0"/>
+
+                            </PathFigure>
+                        </PathGeometry>
+                    </Path.Data>
+                </Path>
+
+                <!-- Текст TextBox -->
+                <ScrollViewer x:Name="PART_ContentHost"
+                              Margin="15,0"
+                              HorizontalScrollBarVisibility="Hidden"
+                              VerticalScrollBarVisibility="Hidden"
+                              VerticalAlignment="Center"/>
+
+            </Grid>
+        </ControlTemplate>
     </Application.Resources>
 </Application>

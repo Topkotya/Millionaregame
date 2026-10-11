@@ -4,17 +4,20 @@
     <Viewbox Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Grid Background="#FF061B4D" Width="800" Height="600">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                
                 <TextBlock Text="🏆 ПОЗДРАВЛЯЕМ! 🏆" 
                            Foreground="#FFE9D554" FontSize="40" 
                            HorizontalAlignment="Center"/>
+                
                 <TextBlock Text="Вы стали миллионером!" 
                            Foreground="White" FontSize="30" 
                            Margin="0,20,0,0" HorizontalAlignment="Center"/>
+                
                 <Button Content="Начать заново" Margin="0,40,0,0" Padding="20,10"
                         Template="{StaticResource MillionaireButtonTemplate}"
                         Background="{StaticResource BlueGradient}"
-                        Command="{Binding DataContext.RestartCommand, 
-                                  RelativeSource={RelativeSource AncestorType=ContentControl}}"/>
+                        Command="{Binding DataContext.RestartCommand, RelativeSource={RelativeSource AncestorType=ContentControl}}"/>
+                
             </StackPanel>
         </Grid>
     </Viewbox>

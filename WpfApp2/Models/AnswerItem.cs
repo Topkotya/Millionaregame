@@ -35,6 +35,15 @@ namespace WpfApp2
                 OnPropertyChanged(nameof(Visability));
             }
         } = "Visible";
+        public bool IsEnabled
+        {
+            get => field;
+            set
+            {
+                field = value;
+                OnPropertyChanged(nameof(IsEnabled));
+            }
+        } = true;
         public Brush Background
         {
             get => field;

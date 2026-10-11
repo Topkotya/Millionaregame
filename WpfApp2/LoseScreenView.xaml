@@ -5,17 +5,19 @@
     <Viewbox Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Grid Background="#FF061B4D" Width="800" Height="600">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                
                 <TextBlock Text="💔 ИГРА ОКОНЧЕНА 💔" 
                            Foreground="Red" FontSize="40" 
                            HorizontalAlignment="Center"/>
+                
                 <TextBlock Text="Правильный ответ был другим..." 
                            Foreground="White" FontSize="25" 
                            Margin="0,20,0,0" HorizontalAlignment="Center"/>
+                
                 <Button Content="Попробовать снова" Margin="0,40,0,0" Padding="20,10"
                         Template="{StaticResource MillionaireButtonTemplate}"
                         Background="{StaticResource BlueGradient}"
-                        Command="{Binding DataContext.RestartCommand, 
-                                  RelativeSource={RelativeSource AncestorType=ContentControl}}"/>
+                        Command="{Binding DataContext.RestartCommand, RelativeSource={RelativeSource AncestorType=ContentControl}}"/>
             </StackPanel>
         </Grid>
     </Viewbox>
