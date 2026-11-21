@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Text.Json.Serialization;
 using System.Windows.Media;
 
 namespace WpfApp2
@@ -21,18 +22,19 @@ namespace WpfApp2
             get => field;
             set
             {
-                field = value * 2;
+                field = value;
                 OnPropertyChanged(nameof(TypeSpeed));
             }
         }
-        public Brush TextColor
+        public Color ConvertedColor
         {
-            get => field;
-            set
-            {
-                field = value;
-                OnPropertyChanged(nameof(TextColor));
-            }
+            get => (Color)ColorConverter.ConvertFromString(TextColor);
+        }
+        public string TextColor { get; set; }
+        [JsonIgnore]
+        public Brush Brush
+        {
+            get => new SolidColorBrush(ConvertedColor);
         }
         protected void OnPropertyChanged(string name) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         public event PropertyChangedEventHandler? PropertyChanged;

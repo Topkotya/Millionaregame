@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -25,6 +25,15 @@ namespace WpfApp2
                 OnPropertyChanged(nameof(State));
             }
         } = ERewardState.Locked;
+        public bool IsFireproof
+        {
+            get => field;
+            set
+            {
+                field = value;
+                OnPropertyChanged(nameof(IsFireproof));
+            }
+        }
         public event PropertyChangedEventHandler? PropertyChanged;        
         protected void OnPropertyChanged(string name) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }

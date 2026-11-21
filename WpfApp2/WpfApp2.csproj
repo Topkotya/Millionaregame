@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -9,12 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Media\Music\100-1000 Questions.mp3" />
+    <None Remove="Media\Music\1702150225-361297700.mp3" />
+    <None Remove="Media\Music\Ask the Audience Lifeline.mp3" />
+    <None Remove="Media\Music\Ask the Host Lifeline.mp3" />
+    <None Remove="Media\Music\Last Night on Super Millionaire %28Bonus Track%29.mp3" />
+    <None Remove="Media\Music\Let%27s Play for 125,000.mp3" />
+    <None Remove="Media\Music\Let%27s Play for One Million!.mp3" />
+    <None Remove="Media\Music\Opening Theme.mp3" />	
     <None Remove="pngtree-blue-fantasy-technology-background-material-backgroundpsd-backgroundadbackground-psdcreative-image_58500.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.161" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +35,51 @@
 	<ItemGroup>
 		<Content Include="Assets\questionsss.json">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Music\100-1000 Questions.mp3">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Music\1702150225-361297700.mp3">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Music\Ask the Audience Lifeline.mp3">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Music\Ask the Host Lifeline.mp3">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Music\Last Night on Super Millionaire (Bonus Track).mp3">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Music\Let's Play for 125,000.mp3">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Music\2000-100000 Questons.mp3">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Music\Let's Play for One Million!.mp3">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Music\Opening Theme.mp3">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Video\IntroVideo.mp4">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Sounds\Select.wav">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Sounds\Confirm.wav">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Sounds\Correct.wav">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Sounds\Wrong.wav">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Media\Sounds\Ring.wav">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
 

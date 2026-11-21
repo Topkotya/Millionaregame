@@ -1,16 +1,44 @@
-﻿<Application x:Class="WpfApp2.App"
+<Application x:Class="WpfApp2.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WpfApp2"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+
+        <BooleanToVisibilityConverter x:Key="BoolToVisibility"/>
         
         <LinearGradientBrush x:Key="BlueGradient" StartPoint="0,0" EndPoint="0,1">
             <GradientStop Color="#FF174EA6" Offset="0"/>
             <GradientStop Color="#FF0B2F78" Offset="0.5"/>
             <GradientStop Color="#FF061B4D" Offset="1"/>
         </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="GoldGradient" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#FFFAB005" Offset="0"/>
+            <GradientStop Color="#FFBE8200" Offset="1"/>
+        </LinearGradientBrush>
         
+        <ControlTemplate x:Key="MillionaireQuestionTemplate" TargetType="ContentControl">
+            <Grid>
+                <Path Stretch="Fill"
+                      Fill="{TemplateBinding Background}"
+                      Stroke="#FFB8CFFF"
+                      StrokeThickness="2"
+                      Data="M 23,0 L 95,0 Q 103,0 108,7 L 115,17 Q 118,25 115,33 L 108,43 Q 103,50 95,50 L 23,50 Q 15,50 10,43 L 3,33 Q 0,25 3,17 L 10,7 Q 15,0 23,0 Z"/>
+
+                <Viewbox Margin="34,12,34,12"
+                         Stretch="Uniform"
+                         StretchDirection="DownOnly">
+                    <TextBlock Text="{TemplateBinding Content}"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Foreground="White"
+                               FontSize="14"
+                               MaxWidth="440"/>
+                </Viewbox>
+            </Grid>
+        </ControlTemplate>
+
         <ControlTemplate x:Key="MillionaireButtonTemplate" TargetType="Button">
             <Grid>
                 <!-- Фон ромбовидной кнопки -->

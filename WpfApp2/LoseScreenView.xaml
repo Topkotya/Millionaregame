@@ -1,4 +1,4 @@
-﻿<!-- Views/LoseScreenView.xaml -->
+<!-- Views/LoseScreenView.xaml -->
 <UserControl x:Class="WpfApp2.LoseScreenView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
@@ -10,11 +10,18 @@
                            Foreground="Red" FontSize="40" 
                            HorizontalAlignment="Center"/>
                 
-                <TextBlock Text="Правильный ответ был другим..." 
-                           Foreground="White" FontSize="25" 
+                <TextBlock Text="{Binding Message}"
+                           Foreground="White" FontSize="25"
+                           TextWrapping="Wrap" MaxWidth="650" TextAlignment="Center"
+                           Margin="0,20,0,0" HorizontalAlignment="Center"/>
+
+                <TextBlock Text="{Binding Money}"
+                           Foreground="#FFFAB005" FontSize="30" FontWeight="Bold"
                            Margin="0,20,0,0" HorizontalAlignment="Center"/>
                 
                 <Button Content="Попробовать снова" Margin="0,40,0,0" Padding="20,10"
+                        FontSize="16"
+                        Foreground="White"
                         Template="{StaticResource MillionaireButtonTemplate}"
                         Background="{StaticResource BlueGradient}"
                         Command="{Binding DataContext.RestartCommand, RelativeSource={RelativeSource AncestorType=ContentControl}}"/>

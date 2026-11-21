@@ -5,6 +5,9 @@
     <Compile Update="GameplayView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="IntroScreenView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoseScreenView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

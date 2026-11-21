@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -11,12 +11,16 @@ namespace WpfApp2
         public DataTemplate GameplayTemplate { get; set; }
         public DataTemplate WinTemplate { get; set; }
         public DataTemplate LoseTemplate { get; set; }
+        public DataTemplate IntroTemplate { get; set; }
+        public DataTemplate FireproofTemplate { get; set; }
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
             if (item is EGameState state)
             {
                 return state switch
                 {
+                    EGameState.Intro => IntroTemplate,
+                    EGameState.ChooseFireproof => FireproofTemplate,
                     EGameState.Win => WinTemplate,
                     EGameState.Lose => LoseTemplate,
                     _ => GameplayTemplate

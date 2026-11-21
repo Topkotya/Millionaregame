@@ -7,26 +7,58 @@ namespace WpfApp2;
 
 public class GameplayModel
 {
-    private string rightAnswer;
+    private string rightAnswer = "";
     private int currentRound = 0;
-    private OptionModel[] Options;
+    private OptionModel[] Options = Array.Empty<OptionModel>();
     private QuestionModel[] questions;
+    private readonly Random random = new Random();
+
     public string CurrentRound => (currentRound + 1).ToString();
+    public string RightAnswer => rightAnswer;
+
     public GameplayModel()
-    {
-        string path = Path.Combine(AppContext.BaseDirectory,"Assets","questionsss.json");                
+    {        
+        string path = Path.Combine(AppContext.BaseDirectory,"Assets","questionsss.json");        
         var Questions = JsonSerializer.Deserialize<Questions>(File.ReadAllText(path), new JsonSerializerOptions() { IncludeFields = true })
-                    ?? throw new InvalidOperationException("Не удалось десериализовать questions.json");
+                   ?? throw new InvalidOperationException("Не удалось десериализовать questions.json");
+
         questions = Questions.GetQuestions();
     }
+
     public List<ItemTemplate> GetReplics()
     {
+        var question = questions[currentRound];
         List<ItemTemplate> tempLines = new List<ItemTemplate>();
-        tempLines.Add(new ItemTemplate() { Text = "звонок: " + ". . . . . . . . . .", TextColor = new SolidColorBrush(Color.FromRgb(255, 255, 255)), TypeSpeed = 8 });
-        tempLines.Add(new ItemTemplate() { Text = "Я: " + "Привет помоги с вопросом", TextColor = new SolidColorBrush(Color.FromRgb(0, 212, 9)), TypeSpeed = 8 });
-        tempLines.Add(new ItemTemplate() { Text = "Друг: " + "Да лады без а ответ Б", TextColor = new SolidColorBrush(Color.FromRgb(245, 52, 52)), TypeSpeed = 8 });
-        return tempLines;
+        tempLines.Add(new ItemTemplate() { Text = "звонок: " + ".  .  .  .  .  .  .  .  .  .", TextColor = "#FF5733", TypeSpeed = 8 });
+
+        // replics[0] - вопрос игрока, [1] - верный ответ, [2] - неверный ответ, [3] - абонент не отвечает
+        tempLines.Add(CloneLine(question.replics[0], question.question));
+
+        int roll = random.Next(100);
+        if (roll < 5)
+        {
+            tempLines.Add(CloneLine(question.replics[3], null));
+        }
+        else if (roll < 20)
+        {
+            var wrongAnswers = Options.Where(x => !x.IsRight).ToArray();
+            string wrongAnswer = wrongAnswers[random.Next(wrongAnswers.Length)].Str;
+            tempLines.Add(CloneLine(question.replics[2], wrongAnswer));
+        }
+        else
+        {
+            tempLines.Add(CloneLine(question.replics[1], rightAnswer));
+        }
+
+        return tempLines;        
     }
+
+    private static ItemTemplate CloneLine(ItemTemplate source, string? value)
+    {
+        string text = value == null ? source.Text : source.Text.Replace("{0}", value);
+        return new ItemTemplate() { Text = text, TypeSpeed = source.TypeSpeed, TextColor = source.TextColor };
+    }
+
     public bool CheckAnswer(string answer)
     {
         if (answer == rightAnswer)
@@ -36,11 +68,12 @@ public class GameplayModel
         }
         return false;
     }
+
     public string GetQuestion()
     {
         return questions[currentRound].question;
     }
-    private Random random = new Random();
+
     public int[] GetIncorrectAnswersIDs(int maxCount = 2)
     {
         int[] tempNotRightAnswers = Options.Select((x, index) => new { Value = x, Index = index })
@@ -55,11 +88,12 @@ public class GameplayModel
 
         for (int i = tempNotRightAnswers.Length - 1; i > 0; i--)
         {
-            int j = random.Next(2);
+            int j = random.Next(i + 1);
             (tempNotRightAnswers[i], tempNotRightAnswers[j]) = (tempNotRightAnswers[j], tempNotRightAnswers[i]);
         }        
         return [tempNotRightAnswers[0], tempNotRightAnswers[1]];               
     }
+
     public int[] PercentAnswers()
     {
         int[] wrongIDAnswers = GetIncorrectAnswersIDs(3);
@@ -70,36 +104,40 @@ public class GameplayModel
         int[] answersPercentage = new int[4];
         switch (currentRound)
         {
-            case < 4:                
+            case < 4:
                 for (int i = 0; i < answersPercentage.Length - 1; i++)
                 {
-                    answersPercentage[wrongIDAnswers[i]] = random.Next(0, 20);
+                    answersPercentage[wrongIDAnswers[i]] = random.Next(0, 5);
                 }
-                answersPercentage[rightIDAnswer] = random.Next(60, 80);
+                answersPercentage[rightIDAnswer] = random.Next(80, 89);
                 return answersPercentage;
+
             case < 8:
                 for (int i = 0; i < answersPercentage.Length - 1; i++)
                 {
-                    answersPercentage[wrongIDAnswers[i]] = random.Next(20, 40);
+                    answersPercentage[wrongIDAnswers[i]] = random.Next(5, 15);
                 }
-                answersPercentage[rightIDAnswer] = random.Next(30, 60);
+                answersPercentage[rightIDAnswer] = random.Next(50, 59);
                 return answersPercentage;
+
             case < 12:
                 for (int i = 0; i < answersPercentage.Length - 1; i++)
                 {
-                    answersPercentage[wrongIDAnswers[i]] = random.Next(30, 35);
+                    answersPercentage[wrongIDAnswers[i]] = random.Next(10, 20);
                 }
-                answersPercentage[rightIDAnswer] = random.Next(40, 50);
+                answersPercentage[rightIDAnswer] = random.Next(35, 44);
                 return answersPercentage;
+
             default:
                 for (int i = 0; i < answersPercentage.Length - 1; i++)
                 {
-                    answersPercentage[wrongIDAnswers[i]] = random.Next(30, 35);
+                    answersPercentage[wrongIDAnswers[i]] = random.Next(15, 25);
                 }
-                answersPercentage[rightIDAnswer] = random.Next(30, 35);
+                answersPercentage[rightIDAnswer] = random.Next(20, 29);
                 return answersPercentage;
-        }       
+        }
     }
+
     public string[] GetAnswers()
     {
         Options = questions[currentRound].options.ToArray();
@@ -118,14 +156,15 @@ public class OptionModel
     public string Str { get; init; }
     public bool IsRight { get; init; }
 }
-
 public class QuestionModel
 {
-    public readonly string question;
+    public readonly string question;    
     public readonly OptionModel[] options;
-    public QuestionModel(string question, OptionModel[] options)
+    public readonly ItemTemplate[] replics;
+    public QuestionModel(string question, OptionModel[] options, ItemTemplate[] replics)
     {
         this.question = question;
         this.options = options;
+        this.replics = replics;
     }
 }

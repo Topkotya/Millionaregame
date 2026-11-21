@@ -1,4 +1,4 @@
-﻿<Window x:Class="WpfApp2.MainWindow"                
+<Window x:Class="WpfApp2.MainWindow"                
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"        
@@ -9,9 +9,16 @@
     
     <Window.Resources>
         
-        <local:RewardBrushConverter x:Key="RewardBrushConverter"/>
-        <local:VisibilityConverter x:Key="VisibilityConverter"/>
-        
+        <DataTemplate x:Key="IntroTemplate">
+            <local:IntroScreenView 
+                DataContext="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=DataContext.introScreenViewModel}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="FireproofTemplate">
+            <local:FireproofSelectionView
+                DataContext="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=DataContext.fireproofViewModel}"/>
+        </DataTemplate>
+
         <DataTemplate x:Key="GameplayTemplate">
             <local:GameplayView
                 DataContext="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=DataContext.gameplayViewModel}" />
@@ -30,7 +37,9 @@
         <local:GameStateTemplateSelector x:Key="GameStateSelector"
                                          GameplayTemplate="{StaticResource GameplayTemplate}"
                                          WinTemplate="{StaticResource WinTemplate}"
-                                         LoseTemplate="{StaticResource LoseTemplate}" />
+                                         LoseTemplate="{StaticResource LoseTemplate}"
+                                         IntroTemplate="{StaticResource IntroTemplate}"
+                                         FireproofTemplate="{StaticResource FireproofTemplate}"/>
     </Window.Resources>
 
     <Window.DataContext>
